@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+  <meta name="description" content="Web development" >
+  <meta name="keywords"    content="HTML (Part 1 - Content - Form)" >
+  <meta name="author"      content="Jimmy Kimathi Musyimi" >
+  <title>Web Development Survey</title>
+</head>
+<body>
+  <!-- Survey content -->
+  <h1>Unit Delivery Survey</h1>
+
+  <form action="to_some_php" method="post">
+    <fieldset>
+      <p>Which browser do you know how to use? (Check all that applies)</p>
+      <label for="chrome">Chrome</label>
+      <input type="checkbox" id="chrome" name="browser" value="Chrome"><br>
+      <label for="firefox">Firefox</label>
+      <input type="checkbox" id="firefox" name="browser" value="Firefox"><br>
+      <label for="ie">Internet Explorer</label>
+      <input type="checkbox" id="ie" name="browser" value="Internet Explorer"><br>
+      <label for="safari">Safari</label>
+      <input type="checkbox" id="safari" name="browser" value="Safari"><br>
+
+      <p>Which text editor do you know how to use (Check all that applies)</p>
+      <label for="komodo">Komodo</label>
+      <input type="checkbox" id="komodo" name="editor" value="Komodo"><br>
+      <label for="notepad">Notepad++</label>
+      <input type="checkbox" id="notepad" name="editor" value="Notepad++"><br>
+      <label for="sublime">Sublime Text</label>
+      <input type="checkbox" id="sublime" name="editor" value="Sublime Text"><br>
+      <label for="wrangler">Wrangler</label>
+      <input type="checkbox" id="wrangler" name="editor" value="Wrangler"><br>
+    </fieldset>
+    <br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+  <p><a href="survey.html">Previous</a> <a href="survey2.html">Next</a></p>
+</body>
+</html>

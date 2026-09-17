@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+  <meta name="description" content="Web development" >
+  <meta name="keywords"    content="HTML (Part 1 - Content - Form)" >
+  <meta name="author"      content="Jimmy Kimathi Musyimi" >
+  <title>Web Development Survey</title>
+</head>
+<body>
+  <!-- Survey content -->
+  <h1>Unit Delivery Survey</h1>
+
+  <p>The Research Project This study aims to collect feedback from students undertaking up Web Development. This is in order to evaluate the delivery of the unit. Results of the evaluation will be of interest to the lecturers to help them determine whether our approach is likely to enhance the learning outcomes of the students.</p>
+
+  <form action="to_some_php" method="post">
+    <fieldset>
+      <legend>Please enter your name, gender and degree program below:</legend>
+
+      <label for="name">Name (Optional)</label>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br><br>
+
+      <label for="degree">Degree of Program:</label>
+      <select id="degree" name="degree">
+        <option value="IT">IT</option>
+        <option value="Multimedia">Multimedia</option>
+        <option value="Design">Design</option>
+      </select>
+    </fieldset>
+    <br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+  <p><a href="to_nothing">Previous</a> <a href="survey1.html">Next</a></p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+  <meta name="description" content="Web development" >
+  <meta name="keywords"    content="HTML (Part 1 - Content - Form)" >
+  <meta name="author"      content="Jimmy Kimathi Musyimi" >
+  <title>Web Development Survey</title>
+</head>
+<body>
+  <!-- Survey content -->
+  <h1>Unit Delivery Survey</h1>
+
+  <form action="to_some_php" method="post">
+    <fieldset>
+      <p>How do you rate the lecture materials?</p>
+      <input type="radio" id="lec-excellent" name="lecture" value="Excellent">
+      <label for="lec-excellent">Excellent</label>
+      <input type="radio" id="lec-good" name="lecture" value="Good">
+      <label for="lec-good">Good</label>
+      <input type="radio" id="lec-fair" name="lecture" value="Fair">
+      <label for="lec-fair">Fair</label>
+      <input type="radio" id="lec-poor" name="lecture" value="Poor">
+      <label for="lec-poor">Poor</label>
+
+      <p>How do you rate the lab materials?</p>
+      <input type="radio" id="lab-excellent" name="lab" value="Excellent">
+      <label for="lab-excellent">Excellent</label>
+      <input type="radio" id="lab-good" name="lab" value="Good">
+      <label for="lab-good">Good</label>
+      <input type="radio" id="lab-fair" name="lab" value="Fair">
+      <label for="lab-fair">Fair</label>
+      <input type="radio" id="lab-poor" name="lab" value="Poor">
+      <label for="lab-poor">Poor</label>
+
+      <p>What do you like best about the unit: (no more than 150 words)</p>
+      <textarea id="comment" name="comment" rows="5" cols="50"></textarea>
+    </fieldset>
+    <br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+  <p><a href="survey1.html">Previous</a> Next</p>
+</body>
+</html>
