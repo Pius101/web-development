@@ -1,0 +1,34 @@
+<!--a. Name of the Contributor: text type, maximum of 25 characters, alphabetical characters only
+b. Plant's name: text type, maximum of 25 characters, alphabetical characters only
+c. Photo(s): file type
+d. Comments: text area type, setting the rows and columns according to the form design.-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Personal profile page for Jimmy Kimathi Musyimi">
+        <meta name="author" content="Jimmy Kimathi Musyimi">
+        <title>Jimmy Kimathi Musyimi - Profile Page</title>
+    </head>
+    <body>
+            <form action="submit_contribution.php" method="post" enctype="multipart/form-data">
+                <label for="contributor_name">Name of the Contributor:</label>
+                <input type="text" id="contributor_name" name="contributor_name" maxlength="25" pattern="[A-Za-z\s]+" required><br><br>
+
+                <label for="plant_name">Plant's Name:</label>
+                <input type="text" id="plant_name" name="plant_name" maxlength="25" pattern="[A-Za-z\s]+" required><br><br>
+
+                <label for="photo">Photo(s):</label>
+                <input type="file" id="photo" name="photo[]" accept="image/*" multiple required><br><br>
+
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="5" cols="40"></textarea><br><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+    </body>
+</html>

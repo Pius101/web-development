@@ -1,0 +1,50 @@
+<!-- Enquiry Form -->
+ <!--a. First name: text type, maximum of 25 characters, alphabetical characters only
+b. Last name: text type, maximum of 25 characters, alphabetical characters only
+c. Email address: email type
+d. Phone number: text or tel type, maximum of 10 digit. Use a placeholder.
+e. Enquiry: use a select type to select from the list (products/services).
+f. Comments: text area type, setting the rows and columns according to the form design.-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="enquiry form for Jimmy Kimathi Musyimi">
+        <meta name="author" content="Jimmy Kimathi Musyimi">
+        <title>Jimmy Kimathi Musyimi - Enquiry Form</title>
+    </head>
+    <body>
+            <form action="submit_enquiry.php" method="post">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" maxlength="25" pattern="[A-Za-z\s]+" required><br><br>
+
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" maxlength="25" pattern="[A-Za-z\s]+" required><br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" maxlength="10" placeholder="1234567890"><br><br>
+
+                <label for="enquiry">Enquiry:</label>
+                <select id="enquiry" name="enquiry">
+                    <option value="">Select an option</option>
+                    <option value="product1">Product 1</option>
+                    <option value="product2">Product 2</option>
+                    <option value="service1">Service 1</option>
+                    <option value="service2">Service 2</option>
+                </select><br><br>
+
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="5" cols="40"></textarea><br><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form> 
+    </body>
+
+</html>
