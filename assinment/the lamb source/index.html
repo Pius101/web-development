@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <meta content="A citizen science website for exploring and contributing information about Malaysian plant biodiversity." name="description"/>
+        <title>Malaysia Plant Biodiversity | Citizen Science</title>
+        <link href="styles/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header class="site-header" id="responsive-navigation">
+            <nav aria-label="Main navigation" class="navbar">
+                <!-- The logo is the Home button. There is intentionally no separate Home link. -->
+                <a aria-label="Malaysia Plant Biodiversity home page" class="site-logo" href="index.html">
+                    <img alt="Malaysia Plant Biodiversity logo" src="styles/images/logo.svg"/>
+                    <span>MY Plant Watch</span>
+                </a>
+                <!-- Desktop navigation. Hidden before it would wrap onto a second line. -->
+                <ul class="nav-links desktop-nav">
+                    <li class="dropdown">
+                        <a href="explore.html">Explore <span aria-hidden="true">▾</span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="families.html">Families</a>
+                            </li>
+                            <li>
+                                <a href="genera.html">Genera</a>
+                            </li>
+                            <li>
+                                <a href="species.html">Species</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="identify.html">Identify</a>
+                    </li>
+                    <li>
+                        <a href="contributor.html">Contributors</a>
+                    </li>
+                    <li>
+                        <a href="contribute.html">Contribute</a>
+                    </li>
+                    <li>
+                        <a href="enquiry.html">Enquiry</a>
+                    </li>
+                    <li>
+                        <a href="profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <a href="enhancement1.html">Enhancements</a>
+                    </li>
+                    <li>
+                        <a href="acknowledgement.html">Acknowledgement</a>
+                    </li>
+                </ul>
+                <!-- Native HTML hamburger menu: no JavaScript and no checkbox. -->
+                <details class="mobile-nav">
+                    <summary aria-label="Open navigation menu" class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </summary>
+                    <ul class="mobile-nav-links">
+                        <li>
+                            <a href="explore.html">Explore</a>
+                        </li>
+                        <li class="mobile-submenu-title">Explore categories</li>
+                        <li class="mobile-subitem">
+                            <a href="families.html">Families</a>
+                        </li>
+                        <li class="mobile-subitem">
+                            <a href="genera.html">Genera</a>
+                        </li>
+                        <li class="mobile-subitem">
+                            <a href="species.html">Species</a>
+                        </li>
+                        <li>
+                            <a href="identify.html">Identify</a>
+                        </li>
+                        <li>
+                            <a href="contributor.html">Contributors</a>
+                        </li>
+                        <li>
+                            <a href="contribute.html">Contribute</a>
+                        </li>
+                        <li>
+                            <a href="enquiry.html">Enquiry</a>
+                        </li>
+                        <li>
+                            <a href="profile.html">Profile</a>
+                        </li>
+                        <li>
+                            <a href="enhancement1.html">Enhancements</a>
+                        </li>
+                        <li>
+                            <a href="acknowledgement.html">Acknowledgement</a>
+                        </li>
+                    </ul>
+                </details>
+            </nav>
+        </header>
+        <main>
+            <section aria-labelledby="hero-title" class="hero" id="home-hero">
+                <div aria-hidden="true" class="hero-slideshow">
+                    <div class="hero-bg hero-bg-1">
+                    </div>
+                    <div class="hero-bg hero-bg-2">
+                    </div>
+                    <div class="hero-bg hero-bg-3">
+                    </div>
+                    <div class="hero-bg hero-bg-4">
+                    </div>
+                </div>
+                <div aria-hidden="true" class="hero-overlay">
+                </div>
+                <div class="hero-content">
+                    <p class="eyebrow">Citizen Science • Malaysian Biodiversity</p>
+                    <h1 id="hero-title">Discover Malaysia's Plant Biodiversity</h1>
+                    <p class="hero-text">
+                        Explore Malaysia's diverse plants, learn how families, genera and species are connected,
+                        and help support biodiversity awareness through citizen science.
+                    </p>
+                    <a class="primary-button" href="explore.html">Explore Plants</a>
+                </div>
+                <div aria-label="Current background image source" class="hero-image-credits">
+                    <a class="hero-image-credit credit-1" href="https://commons.wikimedia.org/wiki/File:Anisoptera_scaphula_Md_Sharif_Hossain_Sourav.jpg" rel="noopener" target="_blank">Image: Anisoptera scaphula — Wikimedia Commons</a>
+                    <a class="hero-image-credit credit-2" href="https://commons.wikimedia.org/wiki/File:Nepenthes_rajah.jpg" rel="noopener" target="_blank">Image: Nepenthes rajah — Wikimedia Commons</a>
+                    <a class="hero-image-credit credit-3" href="https://commons.wikimedia.org/wiki/File:Paphiopedilum_rothschildianum.jpg" rel="noopener" target="_blank">Image: Paphiopedilum rothschildianum — Wikimedia Commons</a>
+                    <a class="hero-image-credit credit-4" href="https://commons.wikimedia.org/wiki/File:Dipterocarpus_grandiflorus_Blanco2.263.jpg" rel="noopener" target="_blank">Image: Dipterocarpus grandiflorus — Wikimedia Commons</a>
+                </div>
+            </section>
+            <section aria-labelledby="project-title" class="project-intro">
+                <div class="section-inner">
+                    <p class="section-kicker">About the project</p>
+                    <h2 id="project-title">Helping people discover and document Malaysian plants</h2>
+                    <p>
+                        Malaysia is one of the world's important biodiversity hotspots. This website introduces a
+                        citizen-science project that helps visitors explore plant information, identify plants and
+                        contribute observations that can support the collection of biodiversity data.
+                    </p>
+                    <div aria-label="Popular website sections" class="quick-links">
+                        <a href="identify.html">Identify a plant</a>
+                        <a href="contribute.html">Contribute an observation</a>
+                        <a href="contributor.html">View contributors</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a aria-label="MY Plant Watch home" class="footer-logo-link" href="index.html">
+                        <img alt="MY Plant Watch logo" class="footer-logo" src="styles/images/logo.svg"/>
+                        <span>MY Plant Watch</span>
+                    </a>
+                    <p>Exploring Malaysia's plant biodiversity through citizen science.</p>
+                </div>
+                <div class="footer-links">
+                    <h2>Quick links</h2>
+                    <a href="explore.html">Explore</a>
+                    <a href="identify.html">Identify</a>
+                    <a href="contributor.html">Contributors</a>
+                    <a href="contribute.html">Contribute</a>
+                    <a href="acknowledgement.html">Acknowledgement</a>
+                </div>
+                <div class="footer-contact">
+                    <h2>Contact</h2>
+                    <p>Created by Jimmy Kimathi Musyimi</p>
+                    <a href="mailto:102775339@students.swinburne.edu.my">Email me</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 MY Plant Watch</p>
+            </div>
+        </footer>
+    </body>
+</html>
