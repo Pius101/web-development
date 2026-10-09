@@ -1,0 +1,84 @@
+MY Plant Watch — current Explorer species image/source notes
+
+Dipterocarpus grandiflorus
+Image/source: https://www.inaturalist.org/guide_taxa/285413
+
+Dipterocarpus kunstleri
+Image/source: https://rimbundahan.org/dipterocarpus-kunstleri/
+
+Vatica borneensis
+Species source: https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:321598-1/images
+Note: some pages currently use a representative Vatica genus image because exact living photographs are scarce.
+
+Vatica flavida
+Image/source: https://rimbundahan.org/genus-vatica/
+
+Horsfieldia flocculosa
+Species source: https://powo.science.kew.org/taxon/585715-1
+Note: some pages currently use a representative Horsfieldia genus image.
+
+Horsfieldia penangiana
+Species source: https://powo.science.kew.org/taxon/585761-1
+Note: some pages currently use a representative Horsfieldia genus image.
+
+Knema communis
+Species source: https://powo.science.kew.org/taxon/585848-1
+Note: some pages currently use a representative Knema genus image.
+
+Knema mandaharan
+Species source: https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:585890-1
+Note: some pages currently use a representative Knema genus image.
+
+family
+Dipterocarpaceae
+https://commons.wikimedia.org/wiki/File:Dipterocarpus_retusus_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-054.jpg
+
+Myristicaceae
+https://commons.wikimedia.org/wiki/File:Myristica_fragrans_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-097.jpg
+
+genus
+Dipterocarpus
+https://commons.wikimedia.org/wiki/File:Dipterocarpus_retusus_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-054.jpg
+
+vatica
+https://commons.wikimedia.org/wiki/Category:Vatica
+
+Horsfieldia
+https://commons.wikimedia.org/wiki/Category:Horsfieldia
+
+Knema
+https://commons.wikimedia.org/wiki/Category:Knema
+
+species
+Dipterocarpus grandifloras
+https://www.flickr.com/photos/loupok/14960509992/in/photostream/
+
+Dipterocarpus kunstleri
+https://rimbundahan.org/genus-dipterocarpus/
+
+Vatica borneensis
+https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:321598-1
+
+Vatica flavida
+https://rimbundahan.org/genus-vatica/
+
+Horsfieldia flocculosa
+https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:585715-1/
+
+Horsfieldia penangiana
+https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:585761-1/
+
+Knema communis
+citation- 
+Muséum national d’Histoire naturelle, Paris (France)
+Collection: Vascular plants (P)
+Specimen P02026748
+accessed 10/10/2025
+link http://coldb.mnhn.fr/catalognumber/mnhn/p/p02026748
+
+Biodiversity of Singapore (n.d.) Knema communis J.Sinclair. Available at: https://singapore.biodiversity.online/tracheophyta-magnoliopsida-magnoliales-myristicaceae-knema-communis (Accessed: 10 October 2026).
+https://singapore.biodiversity.online/tracheophyta-magnoliopsida-magnoliales-myristicaceae-knema-communis
+
+Knema mandaharan
+https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:585890-1
+
