@@ -8,26 +8,25 @@ Image/source: https://rimbundahan.org/dipterocarpus-kunstleri/
 
 Vatica borneensis
 Species source: https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:321598-1/images
-Note: some pages currently use a representative Vatica genus image because exact living photographs are scarce.
+
 
 Vatica flavida
 Image/source: https://rimbundahan.org/genus-vatica/
 
 Horsfieldia flocculosa
 Species source: https://powo.science.kew.org/taxon/585715-1
-Note: some pages currently use a representative Horsfieldia genus image.
+
 
 Horsfieldia penangiana
 Species source: https://powo.science.kew.org/taxon/585761-1
-Note: some pages currently use a representative Horsfieldia genus image.
+
 
 Knema communis
 Species source: https://powo.science.kew.org/taxon/585848-1
-Note: some pages currently use a representative Knema genus image.
 
 Knema mandaharan
 Species source: https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:585890-1
-Note: some pages currently use a representative Knema genus image.
+
 
 family
 Dipterocarpaceae

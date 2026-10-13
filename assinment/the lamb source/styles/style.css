@@ -716,11 +716,6 @@ h2 {
     outline: none;
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 .explore-aside {
     width: 30vw;
@@ -3039,7 +3034,6 @@ h2 {
 }
 
 
-
 /* ==========================================================
    ENHANCEMENT PAGE
    ========================================================== */
@@ -4364,7 +4358,7 @@ h2 {
         pointer-events: auto;
     }
 }
-\n\n/* ==========================================================\n   Unified solid-green page heroes (all pages except index)\n   ========================================================== */\n.explore-hero,\n.taxonomy-hero,\n.contributor-hero,\n.contribute-hero,\n.identify-hero,\n.enquiry-hero,\n.profile-heading-section,\n.enhancement-hero,\n.contributor-profile-hero,\n.ack-hero {\n    background: var(--forest) !important;\n}\n\n/* Remove decorative hero graphics so the colour stays truly solid. */\n.explore-hero::after,\n.enhancement-hero::after {\n    display: none;\n}\n\n/* Enquiry previously used dark text because its hero was light. */\n.enquiry-hero {\n    color: var(--white);\n    border-bottom-color: rgba(255, 255, 255, 0.10);\n}\n\n.enquiry-hero h1,\n.enquiry-hero .enquiry-lead,\n.enquiry-hero .section-kicker {\n    color: var(--white);\n}\n\n/* ---------- Local species image links ---------- */\n.species-image-link {\n    display: block;\n    color: inherit;\n    text-decoration: none;\n}\n\n.species-image-link:focus-visible {\n    outline: 3px solid var(--forest);\n    outline-offset: 4px;\n    border-radius: 0.8rem;\n}\n\n.species-image-grid {\n    display: grid;\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n    gap: 1.25rem;\n    margin-top: 2rem;\n}\n\n.species-image-card {\n    overflow: hidden;\n    border: 1px solid rgba(23, 58, 42, 0.14);\n    border-radius: 1rem;\n    background: var(--white);\n    box-shadow: 0 10px 24px rgba(23, 58, 42, 0.08);\n}\n\n.species-image-card a {\n    display: grid;\n    height: 100%;\n    color: var(--forest-deep);\n    text-decoration: none;\n}\n\n.species-image-card img {\n    width: 100%;\n    aspect-ratio: 4 / 3;\n    display: block;\n    object-fit: contain;\n    background: #e7f1e4;\n}\n\n.species-image-card span {\n    display: block;\n    padding: 0.85rem 1rem 1rem;\n    font-weight: 700;\n}\n\n.species-image-card a:hover,\n.species-image-card a:focus-visible {\n    background: #eef5ec;\n}\n\n@media (max-width: 900px) {\n    .species-image-grid {\n        grid-template-columns: repeat(2, minmax(0, 1fr));\n    }\n}\n\n@media (max-width: 560px) {\n    .species-image-grid {\n        grid-template-columns: 1fr;\n    }\n}\n
+nn/* ==========================================================\n   Unified solid-green page heroes (all pages except index)\n   ========================================================== */n.explore-hero,n.taxonomy-hero,n.contributor-hero,n.contribute-hero,n.identify-hero,n.enquiry-hero,n.profile-heading-section,n.enhancement-hero,n.contributor-profile-hero,n.ack-hero {n    background: var(--forest) !important;n}nn/* Remove decorative hero graphics so the colour stays truly solid. */n.explore-hero::after,n.enhancement-hero::after {n    display: none;n}nn/* Enquiry previously used dark text because its hero was light. */n.enquiry-hero {n    color: var(--white);n    border-bottom-color: rgba(255, 255, 255, 0.10);n}nn.enquiry-hero h1,n.enquiry-hero .enquiry-lead,n.enquiry-hero .section-kicker {n    color: var(--white);n}nn/* ---------- Local species image links ---------- */n.species-image-link {n    display: block;n    color: inherit;n    text-decoration: none;n}nn.species-image-link:focus-visible {n    outline: 3px solid var(--forest);n    outline-offset: 4px;n    border-radius: 0.8rem;n}nn.species-image-grid {n    display: grid;n    grid-template-columns: repeat(4, minmax(0, 1fr));n    gap: 1.25rem;n    margin-top: 2rem;n}nn.species-image-card {n    overflow: hidden;n    border: 1px solid rgba(23, 58, 42, 0.14);n    border-radius: 1rem;n    background: var(--white);n    box-shadow: 0 10px 24px rgba(23, 58, 42, 0.08);n}nn.species-image-card a {n    display: grid;n    height: 100%;n    color: var(--forest-deep);n    text-decoration: none;n}nn.species-image-card img {n    width: 100%;n    aspect-ratio: 4 / 3;n    display: block;n    object-fit: contain;n    background: #e7f1e4;n}nn.species-image-card span {n    display: block;n    padding: 0.85rem 1rem 1rem;n    font-weight: 700;n}nn.species-image-card a:hover,n.species-image-card a:focus-visible {n    background: #eef5ec;n}nn@media (max-width: 900px) {n    .species-image-grid {n        grid-template-columns: repeat(2, minmax(0, 1fr));n    }n}nn@media (max-width: 560px) {n    .species-image-grid {n        grid-template-columns: 1fr;n    }n}n
 
 /* ==========================================================
    Contributor profile directory cards
@@ -4570,7 +4564,6 @@ h2 {
 .enquiry-hero .section-kicker {
     color: var(--white);
 }
-
 
 
 /* ===== Homepage exception: keep the rotating photographic hero ===== */
@@ -5056,11 +5049,8 @@ h2 {
 }
 
 
-/* =========================================================
-   ALTERNATE HOMEPAGE 1: ASYMMETRIC HOVER SHOWCASE
-   Used by index1.html. CSS-only: hover/focus changes both
-   photograph emphasis and the description shown at left.
-   ========================================================= */
+/* Original homepage featured collage. */
+
 .interactive-showcase-one {
     background: #f5f2e7;
     overflow: hidden;
@@ -5123,7 +5113,7 @@ h2 {
     text-transform: uppercase;
 }
 
-/* Default description when no image is being hovered/focused. */
+
 .interactive-showcase-one:not(:has(.showcase-thumb:hover, .showcase-thumb:focus-visible)) .desc-1,
 .interactive-showcase-one:has(.thumb-1:hover) .desc-1,
 .interactive-showcase-one:has(.thumb-1:focus-visible) .desc-1,
@@ -5179,118 +5169,6 @@ h2 {
 .showcase-thumb.thumb-3 { width: 34%; height: 260px; left: 0; bottom: 0; z-index: 7; }
 .showcase-thumb.thumb-4 { width: 30%; height: 215px; right: 2%; bottom: 25px; z-index: 5; }
 
-/* =========================================================
-   ALTERNATE HOMEPAGE 2: LAYERED FAN / FOCUS CARDS
-   Used by index2.html. The invisible slot stays under the
-   pointer while its card moves to the centre, avoiding hover
-   flicker when a side card comes forward.
-   ========================================================= */
-.interactive-showcase-two {
-    color: #fff;
-    background: #06130f;
-    overflow: hidden;
-}
-
-.fan-heading {
-    position: relative;
-    z-index: 30;
-    text-align: center;
-}
-
-.fan-heading p:last-child {
-    max-width: 700px;
-    margin-inline: auto;
-    color: rgba(255,255,255,.72);
-}
-
-.species-fan-stage {
-    position: relative;
-    height: 620px;
-    margin-top: 1rem;
-}
-
-.fan-slot {
-    --card-w: 330px;
-    --card-h: 490px;
-    position: absolute;
-    left: calc(50% + var(--offset));
-    top: 50%;
-    width: var(--card-w);
-    height: var(--card-h);
-    transform: translate(-50%, -50%);
-}
-
-.fan-card {
-    position: absolute;
-    inset: 0;
-    display: block;
-    overflow: hidden;
-    color: #fff;
-    background: #18362c;
-    border-radius: .45rem;
-    box-shadow: 0 22px 55px rgba(0,0,0,.38);
-    transform: scale(var(--rest-scale)) rotate(var(--rest-rotate));
-    transform-origin: center;
-    transition: transform 360ms cubic-bezier(.2,.8,.2,1), opacity 260ms ease, filter 260ms ease, box-shadow 260ms ease;
-}
-
-.fan-card img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-.fan-card::after {
-    content: "";
-    position: absolute;
-    inset: 46% 0 0;
-    background: linear-gradient(transparent, rgba(0,0,0,.82));
-}
-
-.fan-card > span {
-    position: absolute;
-    z-index: 2;
-    left: 1.2rem;
-    right: 1.2rem;
-    bottom: 1.15rem;
-    display: grid;
-    gap: .2rem;
-    font-size: 1.2rem;
-    font-weight: 800;
-}
-
-.fan-card small {
-    color: rgba(255,255,255,.72);
-    font-size: .72rem;
-    font-style: normal;
-    letter-spacing: .11em;
-    text-transform: uppercase;
-}
-
-.fan-slot-centre { z-index: 8; }
-.slot-2, .slot-4 { z-index: 6; }
-.slot-1, .slot-5 { z-index: 4; }
-
-.fan-slot:hover,
-.fan-slot:focus-within {
-    z-index: 30;
-}
-
-.fan-slot:hover .fan-card,
-.fan-slot:focus-within .fan-card {
-    transform: translateX(calc(-1 * var(--offset))) scale(1.08) rotate(0deg);
-    box-shadow: 0 30px 75px rgba(0,0,0,.62);
-    filter: brightness(1.04) saturate(1.05);
-    outline: 3px solid rgba(255,255,255,.82);
-    outline-offset: 5px;
-}
-
-.species-fan-stage:has(.fan-slot:hover) .fan-slot:not(:hover) .fan-card,
-.species-fan-stage:has(.fan-slot:focus-within) .fan-slot:not(:focus-within) .fan-card {
-    opacity: .46;
-    filter: brightness(.62) saturate(.72);
-}
 
 @media (max-width: 1050px) {
     .showcase-one-layout {
@@ -5301,12 +5179,7 @@ h2 {
     .showcase-description-stack { min-height: 220px; }
     .showcase-one-collage { min-height: 540px; }
 
-    .species-fan-stage {
-        height: 560px;
-        transform: scale(.86);
-        transform-origin: top center;
-        margin-bottom: -70px;
-    }
+    
 }
 
 @media (max-width: 760px) {
@@ -5320,34 +5193,21 @@ h2 {
     .showcase-thumb.thumb-4 { width: 35%; height: 160px; right: 0; bottom: 18px; }
 
     .showcase-thumb:hover,
-    .showcase-thumb:focus-visible {
+.showcase-thumb:focus-visible {
         transform: scale(1.1);
     }
 
-    .species-fan-stage {
-        height: 440px;
-        transform: scale(.62);
-        margin: 0 -22vw -150px;
-    }
+    
 }
 
 @media (prefers-reduced-motion: reduce) {
     .showcase-thumb,
-    .showcase-description,
-    .fan-card {
+.showcase-description {
         transition: none;
     }
 }
 
 
-/* =========================================================
-   REFINED INTERACTIVE HOMEPAGES
-   index1.html: automatic collage focus + hover override
-   index2.html: automatic layered focus + hover override
-   HTML/CSS only; no JavaScript.
-   ========================================================= */
-
-/* ---------- index1: automatic collage ---------- */
 .interactive-showcase-one .showcase-description {
     opacity: 0;
     transform: translateY(16px);
@@ -5429,13 +5289,13 @@ h2 {
     }
 }
 
-/* Any direct interaction pauses the automatic sequence at its current point. */
+
 .interactive-showcase-one:has(.showcase-thumb:hover, .showcase-thumb:focus-visible) .showcase-thumb,
 .interactive-showcase-one:has(.showcase-thumb:hover, .showcase-thumb:focus-visible) .showcase-description {
     animation-play-state: paused;
 }
 
-/* While the visitor chooses a plant, hide the auto-selected description. */
+
 .interactive-showcase-one:has(.showcase-thumb:hover, .showcase-thumb:focus-visible) .showcase-description {
     opacity: 0 !important;
     transform: translateY(16px) !important;
@@ -5467,92 +5327,10 @@ h2 {
     box-shadow: 0 32px 72px rgba(8, 41, 31, .38) !important;
 }
 
-/* ---------- index2: automatic layered focus ---------- */
-.interactive-showcase-two .fan-slot {
-    --fan-delay: 0s;
-    --rest-z: 4;
-    animation: fanSlotPriority 30s linear infinite both;
-    animation-delay: var(--fan-delay);
-}
-
-.interactive-showcase-two .fan-card {
-    animation: fanCardCycle 30s ease-in-out infinite both;
-    animation-delay: var(--fan-delay);
-    transition: transform 520ms cubic-bezier(.2,.8,.2,1),
-                opacity 420ms ease,
-                filter 420ms ease,
-                box-shadow 520ms ease;
-}
-
-/* Start with the centre card, then rotate through the visible side cards. */
-.interactive-showcase-two .slot-3 { --fan-delay: 0s; --rest-z: 8; }
-.interactive-showcase-two .slot-4 { --fan-delay: -24s; --rest-z: 6; }
-.interactive-showcase-two .slot-5 { --fan-delay: -18s; --rest-z: 4; }
-.interactive-showcase-two .slot-1 { --fan-delay: -12s; --rest-z: 4; }
-.interactive-showcase-two .slot-2 { --fan-delay: -6s; --rest-z: 6; }
-
-@keyframes fanCardCycle {
-    0%, 15% {
-        transform: translateX(calc(-1 * var(--offset))) scale(1.08) rotate(0deg);
-        opacity: 1;
-        filter: brightness(1.04) saturate(1.06);
-        box-shadow: 0 34px 82px rgba(0,0,0,.68);
-    }
-    20%, 95% {
-        transform: scale(var(--rest-scale)) rotate(var(--rest-rotate));
-        opacity: .7;
-        filter: brightness(.68) saturate(.78);
-        box-shadow: 0 20px 48px rgba(0,0,0,.34);
-    }
-    100% {
-        transform: translateX(calc(-1 * var(--offset))) scale(1.08) rotate(0deg);
-        opacity: 1;
-        filter: brightness(1.04) saturate(1.06);
-        box-shadow: 0 34px 82px rgba(0,0,0,.68);
-    }
-}
-
-@keyframes fanSlotPriority {
-    0%, 15% { z-index: 30; }
-    20%, 95% { z-index: var(--rest-z); }
-    100% { z-index: 30; }
-}
-
-/* Hover/focus stops the automatic cycle and makes the chosen card the focus. */
-.interactive-showcase-two .species-fan-stage:has(.fan-slot:hover, .fan-slot:focus-within) .fan-slot,
-.interactive-showcase-two .species-fan-stage:has(.fan-slot:hover, .fan-slot:focus-within) .fan-card {
-    animation-play-state: paused;
-}
-
-.interactive-showcase-two .species-fan-stage:has(.fan-slot:hover, .fan-slot:focus-within) .fan-slot:not(:hover):not(:focus-within) {
-    z-index: var(--rest-z) !important;
-}
-
-.interactive-showcase-two .species-fan-stage:has(.fan-slot:hover, .fan-slot:focus-within) .fan-slot:not(:hover):not(:focus-within) .fan-card {
-    transform: scale(var(--rest-scale)) rotate(var(--rest-rotate)) !important;
-    opacity: .42 !important;
-    filter: brightness(.54) saturate(.66) !important;
-    box-shadow: 0 18px 40px rgba(0,0,0,.28) !important;
-}
-
-.interactive-showcase-two .fan-slot:hover,
-.interactive-showcase-two .fan-slot:focus-within {
-    z-index: 50 !important;
-}
-
-.interactive-showcase-two .fan-slot:hover .fan-card,
-.interactive-showcase-two .fan-slot:focus-within .fan-card {
-    transform: translateX(calc(-1 * var(--offset))) scale(1.1) rotate(0deg) !important;
-    opacity: 1 !important;
-    filter: brightness(1.06) saturate(1.08) !important;
-    box-shadow: 0 36px 88px rgba(0,0,0,.72) !important;
-}
 
 @media (prefers-reduced-motion: reduce) {
     .interactive-showcase-one .showcase-thumb,
-    .interactive-showcase-one .showcase-description,
-    .interactive-showcase-two .fan-slot,
-    .interactive-showcase-two .fan-card {
+.interactive-showcase-one .showcase-description {
         animation: none !important;
         transition: none !important;
     }
@@ -5579,35 +5357,20 @@ h2 {
         opacity: 1;
     }
 
-    .interactive-showcase-two .fan-card {
-        opacity: .7;
-        filter: brightness(.68) saturate(.78);
-    }
+    
 
-    .interactive-showcase-two .slot-3 {
-        z-index: 30;
-    }
+    
 
-    .interactive-showcase-two .slot-3 .fan-card {
-        transform: translateX(calc(-1 * var(--offset))) scale(1.08) rotate(0deg);
-        opacity: 1;
-        filter: none;
-    }
+    
 }
 
-/* =========================================================
-   FINAL INTERACTION REFINEMENTS
-   index1: keep other collage images visually stable on hover.
-   index2: straight horizontal conveyor with centre focus.
-   ========================================================= */
 
-/* ---------- index1: cleaner hover + smoother text ---------- */
 .interactive-showcase-one .showcase-description {
     transition: opacity 720ms ease,
                 transform 720ms cubic-bezier(.2,.75,.2,1) !important;
 }
 
-/* Automatic focus should not fade the other photographs. */
+
 @keyframes showcasePhotoCycle {
     0%, 18% {
         z-index: 18;
@@ -5632,7 +5395,7 @@ h2 {
     }
 }
 
-/* When interacting, freeze the automatic cycle but leave every other image unchanged. */
+
 .interactive-showcase-one:has(.showcase-thumb:hover, .showcase-thumb:focus-visible) .showcase-thumb {
     z-index: var(--rest-z) !important;
     transform: scale(1) !important;
@@ -5641,7 +5404,7 @@ h2 {
     box-shadow: 0 20px 45px rgba(8, 41, 31, .18) !important;
 }
 
-/* The chosen image only grows slightly and comes clearly to the front. */
+
 .interactive-showcase-one .showcase-thumb:hover,
 .interactive-showcase-one .showcase-thumb:focus-visible {
     z-index: 60 !important;
@@ -5652,14 +5415,14 @@ h2 {
     outline: 3px solid rgba(255,255,255,.94);
 }
 
-/* Disable the earlier rule that visually muted neighbouring images. */
+
 .interactive-showcase-one .showcase-one-collage:has(.showcase-thumb:hover) .showcase-thumb:not(:hover),
 .interactive-showcase-one .showcase-one-collage:has(.showcase-thumb:focus-visible) .showcase-thumb:not(:focus-visible) {
     filter: none !important;
     opacity: 1 !important;
 }
 
-/* Make hover-driven description changes feel softer. */
+
 .interactive-showcase-one:has(.showcase-thumb:hover, .showcase-thumb:focus-visible) .showcase-description {
     opacity: 0 !important;
     transform: translateY(10px) !important;
@@ -5672,260 +5435,6 @@ h2 {
 .interactive-showcase-one:has(.thumb-4:hover, .thumb-4:focus-visible) .desc-4 {
     opacity: 1 !important;
     transform: translateY(0) !important;
-}
-
-/* ---------- index2: straight conveyor / centre focus ---------- */
-.interactive-showcase-two .species-fan-stage {
-    position: relative;
-    height: 570px;
-    overflow: hidden;
-    margin-top: 1.5rem;
-    transform: none;
-}
-
-.interactive-showcase-two .fan-slot {
-    --card-w: clamp(250px, 24vw, 340px);
-    --card-h: clamp(390px, 42vw, 500px);
-    position: absolute;
-    left: -15%;
-    top: 50%;
-    width: var(--card-w);
-    height: var(--card-h);
-    transform: translate(-50%, -50%);
-    animation: speciesConveyorMove 45s linear infinite both;
-    animation-delay: var(--conveyor-delay);
-    z-index: 3;
-}
-
-.interactive-showcase-two .fan-card {
-    position: absolute;
-    inset: 0;
-    border-radius: .35rem;
-    transform: scale(.76) !important;
-    transform-origin: center;
-    opacity: .62;
-    filter: brightness(.72) saturate(.78);
-    box-shadow: 0 18px 44px rgba(0,0,0,.34);
-    animation: speciesConveyorFocus 45s ease-in-out infinite both;
-    animation-delay: var(--conveyor-delay);
-    transition: transform 420ms cubic-bezier(.2,.8,.2,1),
-                opacity 360ms ease,
-                filter 360ms ease,
-                box-shadow 420ms ease;
-}
-
-/* Straight row: no fan rotation / arc at any point. */
-.interactive-showcase-two .slot-1,
-.interactive-showcase-two .slot-2,
-.interactive-showcase-two .slot-3,
-.interactive-showcase-two .slot-4,
-.interactive-showcase-two .slot-5 {
-    z-index: 3;
-}
-
-/* Start with slot 3 centred, with the remaining cards already visible around it. */
-.interactive-showcase-two .slot-1 { --conveyor-delay: -4.5s; }
-.interactive-showcase-two .slot-2 { --conveyor-delay: -13.5s; }
-.interactive-showcase-two .slot-3 { --conveyor-delay: -22.5s; }
-.interactive-showcase-two .slot-4 { --conveyor-delay: -31.5s; }
-.interactive-showcase-two .slot-5 { --conveyor-delay: -40.5s; }
-
-@keyframes speciesConveyorMove {
-    0%   { left: -15%; z-index: 2; }
-    34%  { z-index: 6; }
-    43%  { z-index: 15; }
-    50%  { left: 50%; z-index: 30; }
-    57%  { z-index: 15; }
-    66%  { z-index: 6; }
-    100% { left: 115%; z-index: 2; }
-}
-
-@keyframes speciesConveyorFocus {
-    0%, 18%, 82%, 100% {
-        transform: scale(.72) !important;
-        opacity: .48;
-        filter: brightness(.62) saturate(.72);
-        box-shadow: 0 14px 34px rgba(0,0,0,.26);
-    }
-    32%, 68% {
-        transform: scale(.86) !important;
-        opacity: .78;
-        filter: brightness(.84) saturate(.9);
-        box-shadow: 0 20px 48px rgba(0,0,0,.38);
-    }
-    44%, 56% {
-        transform: scale(1.10) !important;
-        opacity: 1;
-        filter: brightness(1.04) saturate(1.06);
-        box-shadow: 0 34px 82px rgba(0,0,0,.68);
-    }
-}
-
-/* Hovering anywhere in the conveyor pauses every card exactly where it is. */
-.interactive-showcase-two .species-fan-stage:hover .fan-slot,
-.interactive-showcase-two .species-fan-stage:hover .fan-card,
-.interactive-showcase-two .species-fan-stage:focus-within .fan-slot,
-.interactive-showcase-two .species-fan-stage:focus-within .fan-card {
-    animation-play-state: paused !important;
-}
-
-/* The card under the pointer becomes the focus without jumping to a new position. */
-.interactive-showcase-two .fan-slot:hover,
-.interactive-showcase-two .fan-slot:focus-within {
-    z-index: 60 !important;
-}
-
-.interactive-showcase-two .fan-slot:hover .fan-card,
-.interactive-showcase-two .fan-slot:focus-within .fan-card {
-    transform: scale(1.10) !important;
-    opacity: 1 !important;
-    filter: brightness(1.05) saturate(1.06) !important;
-    box-shadow: 0 36px 88px rgba(0,0,0,.72) !important;
-    outline: 3px solid rgba(255,255,255,.86);
-    outline-offset: 5px;
-}
-
-/* Do not dim every other card when one is hovered. */
-.interactive-showcase-two .species-fan-stage:has(.fan-slot:hover, .fan-slot:focus-within) .fan-slot:not(:hover):not(:focus-within) .fan-card {
-    opacity: inherit !important;
-    filter: inherit !important;
-}
-
-@media (max-width: 900px) {
-    .interactive-showcase-two .species-fan-stage {
-        height: 500px;
-        margin-inline: -3vw;
-    }
-
-    .interactive-showcase-two .fan-slot {
-        --card-w: 260px;
-        --card-h: 400px;
-    }
-}
-
-@media (max-width: 640px) {
-    .interactive-showcase-two .species-fan-stage {
-        height: 430px;
-        margin-inline: -8vw;
-    }
-
-    .interactive-showcase-two .fan-slot {
-        --card-w: 220px;
-        --card-h: 340px;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .interactive-showcase-two .fan-slot,
-    .interactive-showcase-two .fan-card {
-        animation: none !important;
-    }
-
-    .interactive-showcase-two .slot-1 { left: 8%; }
-    .interactive-showcase-two .slot-2 { left: 29%; }
-    .interactive-showcase-two .slot-3 { left: 50%; z-index: 30; }
-    .interactive-showcase-two .slot-4 { left: 71%; }
-    .interactive-showcase-two .slot-5 { left: 92%; }
-
-    .interactive-showcase-two .slot-3 .fan-card {
-        transform: scale(1.08) !important;
-        opacity: 1;
-        filter: none;
-    }
-}
-
-/* Neutralise the older fan hover rule completely in the conveyor version. */
-.interactive-showcase-two .species-fan-stage:has(.fan-slot:hover, .fan-slot:focus-within) .fan-slot:not(:hover):not(:focus-within) .fan-card {
-    transform: scale(.82) rotate(0deg) !important;
-    opacity: .76 !important;
-    filter: brightness(.84) saturate(.9) !important;
-    box-shadow: 0 20px 48px rgba(0,0,0,.36) !important;
-}
-
-
-/* ===== Species page moving carousel placement ===== */
-/* The homepage keeps the asymmetric collage.  The straight moving
-   species browser lives on species.html, with a lighter treatment. */
-.species-motion-section.interactive-showcase-two {
-    padding: clamp(2.6rem, 5vw, 4rem) 0;
-    color: var(--ink);
-    background: #edf4e9;
-    overflow: hidden;
-}
-
-.species-motion-section .home-shell {
-    width: min(1180px, 92%);
-}
-
-.species-motion-section .fan-heading {
-    max-width: 760px;
-    margin-bottom: .55rem;
-    text-align: left;
-}
-
-.species-motion-section .fan-heading .section-kicker {
-    color: var(--forest-soft);
-}
-
-.species-motion-section .fan-heading h2 {
-    color: var(--ink);
-}
-
-.species-motion-section .fan-heading p:last-child {
-    max-width: 720px;
-    margin-inline: 0;
-    color: #425349;
-}
-
-/* This bordered stage is also the hover/focus pause zone.  Keep it
-   close to the cards so the animation only pauses near the carousel. */
-.species-motion-section .species-fan-stage {
-    height: 510px;
-    margin-top: .7rem;
-    margin-bottom: 0;
-    border: 1px solid rgba(38, 91, 65, .20);
-    border-radius: 1rem;
-    background: #f8fbf5;
-    overflow: hidden;
-}
-
-.species-motion-section .fan-slot {
-    --card-w: clamp(235px, 22vw, 315px);
-    --card-h: clamp(355px, 38vw, 460px);
-}
-
-.species-motion-section .fan-card {
-    border-radius: .25rem;
-    box-shadow: 0 16px 38px rgba(24, 59, 44, .24);
-}
-
-.species-motion-section .fan-slot:hover .fan-card,
-.species-motion-section .fan-slot:focus-within .fan-card {
-    box-shadow: 0 28px 62px rgba(24, 59, 44, .38) !important;
-    outline-color: rgba(38, 91, 65, .42);
-}
-
-@media (max-width: 900px) {
-    .species-motion-section .species-fan-stage {
-        height: 450px;
-        margin-inline: 0;
-    }
-    .species-motion-section .fan-slot {
-        --card-w: 250px;
-        --card-h: 410px;
-    }
-}
-
-@media (max-width: 640px) {
-    .species-motion-section .species-fan-stage {
-        height: 385px;
-        margin-inline: 0;
-        border-radius: .75rem;
-    }
-    .species-motion-section .fan-slot {
-        --card-w: 215px;
-        --card-h: 345px;
-    }
 }
 
 
@@ -6004,4 +5513,31 @@ h2 {
 
 @media (max-width: 780px) {
     .explore-visual-grid { grid-template-columns: 1fr; }
+}
+
+/* Classification ranks and clear feature demonstrations. */
+.rank-ladder { list-style: none; margin: 1.5rem auto; padding: 0; max-width: 850px; }
+.rank-ladder li { display: grid; grid-template-columns: 160px 1fr; gap: 1rem; padding: .8rem 1rem; border-bottom: 1px solid var(--forest); background: var(--cream); }
+.rank-ladder .site-rank { background: var(--leaf); border-left: 5px solid var(--forest); }
+.feature-demo { padding: 1rem; margin: 1rem 0; border-left: 3px solid var(--forest); background: var(--cream); }
+.feature-demo h3 { margin: .5rem 0; }
+.explore-topic-figure, .explore-topic-figure img, .explore-topic-figure figcaption { background: var(--cream); border-color: var(--cream); }
+.explore-topic-figure { box-shadow: none; }
+.plant-figure img { object-fit: contain; background: var(--cream); }
+.plant-figure .species-image-link { display: block; }
+.source-note { font-size: .85rem; overflow-wrap: anywhere; }
+.credit-table { width: 100%; border-collapse: collapse; text-align: left; }
+.credit-table th, .credit-table td { padding: .8rem; border-bottom: 1px solid var(--leaf); vertical-align: top; overflow-wrap: anywhere; }
+.credit-table th { background: var(--forest); color: var(--white); }
+.credit-table img { width: 90px; height: 100px; object-fit: contain; }
+.ack-section { padding: 2.5rem 0; }
+.ack-section:nth-child(even) { background: var(--cream); }
+.ack-section .content-shell { width: min(1180px, 92%); margin-inline: auto; }
+.ack-section li { margin-block: .65rem; }
+:target { scroll-margin-top: 100px; }
+.feature-demo:target, .rank-ladder:target { outline: 2px solid var(--forest); }
+@media (max-width: 600px) {
+ .rank-ladder li { grid-template-columns: 1fr; gap: .2rem; }
+ .credit-table th, .credit-table td { padding: .5rem; }
+ .credit-table img { width: 60px; height: 75px; }
 }
