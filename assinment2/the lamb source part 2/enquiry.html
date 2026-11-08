@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Send a plant enquiry to the MY Plant Watch citizen science project." name="description" />
+    <title>
+        Plant Enquiry | MY Plant Watch
+    </title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <!--<script src="scripts/enquiry.js"></script>-->
+    <script src="scripts/build-enquiry-form.js" defer></script>
+    <script src="scripts/enquiry.js" defer></script>
+    <script src="scripts/validate-enquiry.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+<!--<dialog id="error-dialog" aria-labelledby="error-title">
+    <h2 id="error-title">Please check your enquiry</h2>
+    <p id="error-message"></p>
+
+    <form method="dialog">
+        <button class="primary-button" autofocus>OK</button>
+    </form>
+</dialog>-->
+
+<body>
+    <header class="site-header" id="responsive-navigation">
+    </header>
+    <main>
+        <section aria-labelledby="enquiry-title" class="enquiry-hero">
+            <div class="contributor-container enquiry-hero-inner">
+                <p class="eyebrow">
+                    Plant enquiries
+                </p>
+                <h1 id="enquiry-title">
+                    Ask About Malaysian Plants
+                </h1>
+                <p class="enquiry-lead">
+                    Send an enquiry about a plant family, genus, species, identification or contribution. Complete every
+                    required field and your browser will check the information before submission.
+                </p>
+            </div>
+        </section>
+        <section aria-labelledby="enquiry-form-title" class="enquiry-section">
+            <div class="contributor-container enquiry-layout">
+                <aside aria-labelledby="enquiry-help-title" class="enquiry-help">
+                    <p class="section-kicker">
+                        Before you submit
+                    </p>
+                    <h2 id="enquiry-help-title">
+                        Enquiry tips
+                    </h2>
+                    <ul>
+                        <li>
+                            Use letters and spaces only for first and last names.
+                        </li>
+                        <li>
+                            Enter a valid email address.
+                        </li>
+                        <li>
+                            Use a phone number containing up to 10 digits.
+                        </li>
+                        <li>
+                            Select the plant classification area that best matches your question.
+                        </li>
+                        <li>
+                            Give enough detail in the comments box for the enquiry to be understood.
+                        </li>
+                    </ul>
+                    <p>
+                        All fields marked as required must be completed before the form can be submitted.
+                    </p>
+                </aside>
+                <div class="enquiry-form-wrap">
+                    <p class="section-kicker">
+                        Enquiry form
+                    </p>
+                    <h2 id="enquiry-form-title">
+                        Tell us what you would like to know
+                    </h2>
+                    <div id="form-errors" role="alert" hidden></div>
+                    <div id="form-container"></div>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="topics-title" class="enquiry-section enquiry-topics">
+            <div class="contributor-container">
+                <p class="section-kicker">
+                    What can you ask about?
+                </p>
+                <h2 id="topics-title">
+                    Common enquiry topics
+                </h2>
+                <div class="enquiry-topic-grid">
+                    <article>
+                        <h2>
+                            Classification
+                        </h2>
+                        <p>
+                            Ask about how a plant belongs to a family, genus or species and how those levels are
+                            related.
+                        </p>
+                    </article>
+                    <article>
+                        <h2>
+                            Identification
+                        </h2>
+                        <p>
+                            Ask questions about the plant identification interface or what information an identification
+                            result may contain.
+                        </p>
+                    </article>
+                    <article>
+                        <h2>
+                            Contributions
+                        </h2>
+                        <p>
+                            Ask about submitting plant observations, photographs or comments to the MY Plant Watch
+                            project.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a aria-label="MY Plant Watch home" class="footer-logo-link" href="index.html">
+                    <img alt="MY Plant Watch logo" class="footer-logo" src="styles/images/logo.svg" />
+                    <span>
+                        MY Plant Watch
+                    </span>
+                </a>
+                <p>
+                    Exploring Malaysia's plant biodiversity through citizen science.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h2>
+                    Quick links
+                </h2>
+                <a href="explore.html">
+                    Explore
+                </a>
+                <a href="identify.html">
+                    Identify
+                </a>
+                <a href="contributor.html">
+                    Contributors
+                </a>
+                <a href="contribute.html">
+                    Contribute
+                </a>
+                <a href="acknowledgement.html">
+                    Acknowledgement
+                </a>
+            </div>
+            <div class="footer-contact">
+                <h2>
+                    Contact
+                </h2>
+                <p>
+                    Created by Jimmy Kimathi Musyimi
+                </p>
+                <!-- Replace YOUR_STUDENT_EMAIL@student.swin.edu.au below with your real student email address. -->
+                <a href="mailto:YOUR_STUDENT_EMAIL@student.swin.edu.au">
+                    Email me
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                © 2026 MY Plant Watch
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Enhancements implemented in the MY Plant Watch COS10005 website using HTML5 and CSS."
+        name="description" />
+    <title>
+        Enhancements | MY Plant Watch
+    </title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header" id="responsive-navigation">
+    </header>
+    <main class="enhancement-page">
+        <section aria-labelledby="enhancement-title" class="enhancement-hero">
+            <div class="enhancement-container enhancement-hero-inner">
+                <p class="section-kicker">
+                    HTML5 and CSS features
+                </p>
+                <h1 id="enhancement-title">
+                    Website Enhancements
+                </h1>
+                <p>
+                    MY Plant Watch uses responsive layouts, CSS interaction, animation and native HTML controls to make
+                    the website easier to navigate and more engaging without JavaScript.
+                </p>
+            </div>
+        </section>
+        <section aria-labelledby="enhancement-list-title" class="enhancement-section">
+            <div class="enhancement-container">
+                <p class="section-kicker">
+                    Implemented features
+                </p>
+                <h2 id="enhancement-list-title">
+                    Enhancements used across the website
+                </h2>
+                <p class="enhancement-intro">
+                    The features below are implemented with HTML5 and CSS. Each item links to a page where the behaviour
+                    can be tested directly.
+                </p>
+                <div class="enhancement-grid">
+                    <article class="enhancement-card" id="enhancement-fluid-layout">
+                        <div class="enhancement-number">
+                            01
+                        </div>
+                        <div class="enhancement-card-content">
+                            <p class="enhancement-type">
+                                Responsive layout
+                            </p>
+                            <h2>
+                                Fluid page layout
+                            </h2>
+                            <p>
+                                Page widths, grids, typography and spacing adapt as the browser becomes wider or
+                                narrower instead of relying on one fixed desktop size.
+                            </p>
+                            <h3>
+                                How it works
+                            </h3>
+                            <p>
+                                Relative widths,
+                                <code>
+          min()
+         </code>
+                                ,
+                                <code>
+          clamp()
+         </code>
+                                , CSS Grid, Flexbox and media queries allow sections and cards to resize or stack
+                                naturally on smaller screens.
+                            </p>
+                            <div class="technique-tags">
+                                <span>
+                                    min()
+                                </span>
+                                <span>
+                                    clamp()
+                                </span>
+                                <span>
+                                    CSS Grid
+                                </span>
+                                <span>
+                                    Flexbox
+                                </span>
+                                <span>
+                                    @media
+                                </span>
+                            </div>
+                            <div class="feature-demo">
+                                <h3>
+                                    Where to find it
+                                </h3>
+                                <p>
+                                    Homepage · Featured species
+                                </p>
+                                <h3>
+                                    Try it
+                                </h3>
+                                <p>
+                                    Resize the browser: the image collage and text stack vertically on a narrow screen.
+                                </p>
+                            </div>
+                            <a class="enhancement-link" href="index.html#featured-species-showcase">
+                                Open this feature →
+                            </a>
+                        </div>
+                    </article>
+                    <article class="enhancement-card" id="enhancement-responsive-menu">
+                        <div class="enhancement-number">
+                            02
+                        </div>
+                        <div class="enhancement-card-content">
+                            <p class="enhancement-type">
+                                Navigation
+                            </p>
+                            <h2>
+                                CSS-only responsive hamburger menu
+                            </h2>
+                            <p>
+                                The full navigation is replaced by a compact hamburger menu before the links become
+                                crowded on smaller screens.
+                            </p>
+                            <h3>
+                                How it works
+                            </h3>
+                            <p>
+                                A native
+                                <code>
+          &lt;details&gt;
+         </code>
+                                /
+                                <code>
+          &lt;summary&gt;
+         </code>
+                                control opens the mobile menu while CSS transforms the three hamburger lines into a
+                                close icon.
+                            </p>
+                            <div class="technique-tags">
+                                <span>
+                                    &lt;details&gt;
+                                </span>
+                                <span>
+                                    &lt;summary&gt;
+                                </span>
+                                <span>
+                                    transform
+                                </span>
+                                <span>
+                                    @media
+                                </span>
+                            </div>
+                            <div class="feature-demo">
+                                <h3>
+                                    Where to find it
+                                </h3>
+                                <p>
+                                    All pages · top navigation
+                                </p>
+                                <h3>
+                                    Try it
+                                </h3>
+                                <p>
+                                    Narrow the browser to a phone width, then select the three-line menu. Use Tab and
+                                    Enter to open it with the keyboard.
+                                </p>
+                            </div>
+                            <a class="enhancement-link" href="index.html#responsive-navigation">
+                                Open this feature →
+                            </a>
+                        </div>
+                    </article>
+                    <article class="enhancement-card" id="enhancement-picture-hover">
+                        <div class="enhancement-number">
+                            03
+                        </div>
+                        <div class="enhancement-card-content">
+                            <p class="enhancement-type">
+                                Image interaction
+                            </p>
+                            <h2>
+                                Featured-picture hover focus
+                            </h2>
+                            <p>
+                                Hovering or keyboard-focusing a featured plant photograph makes that image slightly
+                                larger and brings it visually in front of the surrounding pictures.
+                            </p>
+                            <h3>
+                                How it works
+                            </h3>
+                            <p>
+                                CSS
+                                <code>
+          :hover
+         </code>
+                                and
+                                <code>
+          :focus-visible
+         </code>
+                                states change
+                                <code>
+          transform
+         </code>
+                                , shadow and stacking order so the selected image becomes more prominent.
+                            </p>
+                            <div class="technique-tags">
+                                <span>
+                                    :hover
+                                </span>
+                                <span>
+                                    :focus-visible
+                                </span>
+                                <span>
+                                    transform
+                                </span>
+                                <span>
+                                    z-index
+                                </span>
+                            </div>
+                            <div class="feature-demo">
+                                <h3>
+                                    Where to find it
+                                </h3>
+                                <p>
+                                    Homepage · Featured species
+                                </p>
+                                <h3>
+                                    Try it
+                                </h3>
+                                <p>
+                                    Hover a plant image or reach it with Tab. Its image and matching description become
+                                    prominent.
+                                </p>
+                            </div>
+                            <a class="enhancement-link" href="index.html#featured-species-showcase">
+                                Open this feature →
+                            </a>
+                        </div>
+                    </article>
+                    <article class="enhancement-card" id="enhancement-validation-feedback">
+                        <div class="enhancement-number">
+                            04
+                        </div>
+                        <div class="enhancement-card-content">
+                            <p class="enhancement-type">
+                                Form feedback
+                            </p>
+                            <h2>
+                                Error hints that change with the input
+                            </h2>
+                            <p>
+                                Form error guidance remains hidden while a field is untouched or valid. If the visitor
+                                enters an invalid value, the field styling changes and an error-specific message appears
+                                below it.
+                            </p>
+                            <h3>
+                                How it works
+                            </h3>
+                            <p>
+                                HTML attributes such as
+                                <code>
+          pattern
+         </code>
+                                ,
+                                <code>
+          required
+         </code>
+                                and
+                                <code>
+          maxlength
+         </code>
+                                define valid input. CSS uses
+                                <code>
+          :invalid
+         </code>
+                                and
+                                <code>
+          :placeholder-shown
+         </code>
+                                to reveal the matching error hint.
+                            </p>
+                            <div class="technique-tags">
+                                <span>
+                                    :invalid
+                                </span>
+                                <span>
+                                    :placeholder-shown
+                                </span>
+                                <span>
+                                    pattern
+                                </span>
+                                <span>
+                                    required
+                                </span>
+                            </div>
+                            <div class="feature-demo">
+                                <h3>
+                                    Where to find it
+                                </h3>
+                                <p>
+                                    Contribution form · Your name
+                                </p>
+                                <h3>
+                                    Try it
+                                </h3>
+                                <p>
+                                    Enter 123 in the name field. The error hint appears; replace it with letters and the
+                                    hint disappears.
+                                </p>
+                            </div>
+                            <a class="enhancement-link" href="contribute.html#contributor-name">
+                                Open this feature →
+                            </a>
+                        </div>
+                    </article>
+                    <article class="enhancement-card" id="enhancement-sticky-elements">
+                        <div class="enhancement-number">
+                            05
+                        </div>
+                        <div class="enhancement-card-content">
+                            <p class="enhancement-type">
+                                Navigation and guidance
+                            </p>
+                            <h2>
+                                Sticky navigation and form guidance
+                            </h2>
+                            <p>
+                                The main navigation remains available at the top of the screen while scrolling. On
+                                longer forms, the guidance panel also stays visible beside the input fields.
+                            </p>
+                            <h3>
+                                How it works
+                            </h3>
+                            <p>
+                                Both features use
+                                <code>
+          position: sticky
+         </code>
+                                with different top offsets and stacking levels. On narrow screens the form guide returns
+                                to normal document flow.
+                            </p>
+                            <div class="technique-tags">
+                                <span>
+                                    position: sticky
+                                </span>
+                                <span>
+                                    top
+                                </span>
+                                <span>
+                                    z-index
+                                </span>
+                                <span>
+                                    responsive fallback
+                                </span>
+                            </div>
+                            <div class="feature-demo">
+                                <h3>
+                                    Where to find it
+                                </h3>
+                                <p>
+                                    Contribution form · A useful observation
+                                </p>
+                                <h3>
+                                    Try it
+                                </h3>
+                                <p>
+                                    On a wide screen, scroll through the form. The guide stays beside the fields while
+                                    the site navigation stays at the top.
+                                </p>
+                            </div>
+                            <a class="enhancement-link" href="contribute.html#sticky-form-guide">
+                                Open this feature →
+                            </a>
+                        </div>
+                    </article>
+                    <article class="enhancement-card" id="enhancement-button-hover">
+                        <div class="enhancement-number">
+                            06
+                        </div>
+                        <div class="enhancement-card-content">
+                            <p class="enhancement-type">
+                                Interface feedback
+                            </p>
+                            <h2>
+                                Button hover and focus effects
+                            </h2>
+                            <p>
+                                Buttons and important links respond visually when the pointer moves over them or when
+                                they receive keyboard focus.
+                            </p>
+                            <h3>
+                                How it works
+                            </h3>
+                            <p>
+                                CSS transitions smoothly change background colour, position and other visual properties,
+                                making interactive controls easier to recognise.
+                            </p>
+                            <div class="technique-tags">
+                                <span>
+                                    :hover
+                                </span>
+                                <span>
+                                    :focus-visible
+                                </span>
+                                <span>
+                                    transition
+                                </span>
+                                <span>
+                                    transform
+                                </span>
+                            </div>
+                            <div class="feature-demo">
+                                <h3>
+                                    Where to find it
+                                </h3>
+                                <p>
+                                    Homepage · Explore Plants button
+                                </p>
+                                <h3>
+                                    Try it
+                                </h3>
+                                <p>
+                                    Hover the Explore Plants button or select it with Tab to see its interactive state.
+                                </p>
+                            </div>
+                            <a class="enhancement-link" href="index.html#home-hero">
+                                Open this feature →
+                            </a>
+                        </div>
+                    </article>
+                    <article class="enhancement-card" id="enhancement-featured-collage">
+                        <div class="enhancement-number">
+                            07
+                        </div>
+                        <div class="enhancement-card-content">
+                            <p class="enhancement-type">
+                                Automatic featured content
+                            </p>
+                            <h2>
+                                Automatic featured-species collage with changing text
+                            </h2>
+                            <p>
+                                The homepage featured-species collage changes its focused photograph automatically while
+                                idle. The accompanying family, species name and description change in sync with the
+                                focused image.
+                            </p>
+                            <h3>
+                                How it works
+                            </h3>
+                            <p>
+                                Coordinated CSS keyframe animations control image emphasis and description opacity.
+                                Hover or keyboard focus pauses the automatic sequence and lets the visitor choose a
+                                plant directly.
+                            </p>
+                            <div class="technique-tags">
+                                <span>
+                                    @keyframes
+                                </span>
+                                <span>
+                                    opacity
+                                </span>
+                                <span>
+                                    transform
+                                </span>
+                                <span>
+                                    animation-play-state
+                                </span>
+                            </div>
+                            <div class="feature-demo">
+                                <h3>
+                                    Where to find it
+                                </h3>
+                                <p>
+                                    Homepage · Featured species
+                                </p>
+                                <h3>
+                                    Try it
+                                </h3>
+                                <p>
+                                    Leave the collage idle to watch the picture emphasis and description change
+                                    together. Hover or focus a photograph to select a plant.
+                                </p>
+                            </div>
+                            <a class="enhancement-link" href="index.html#featured-species-showcase">
+                                Open this feature →
+                            </a>
+                        </div>
+                    </article>
+                    <article class="enhancement-card" id="enhancement-hero-slideshow">
+                        <div class="enhancement-number">
+                            08
+                        </div>
+                        <div class="enhancement-card-content">
+                            <p class="enhancement-type">
+                                Hero animation
+                            </p>
+                            <h2>
+                                Changing homepage hero pictures
+                            </h2>
+                            <p>
+                                The homepage hero cycles through several plant backgrounds instead of displaying one
+                                permanent image, while a dark overlay keeps the heading readable.
+                            </p>
+                            <h3>
+                                How it works
+                            </h3>
+                            <p>
+                                Multiple absolutely positioned background layers use delayed CSS opacity animations so
+                                each image fades in and out in sequence.
+                            </p>
+                            <div class="technique-tags">
+                                <span>
+                                    @keyframes
+                                </span>
+                                <span>
+                                    animation-delay
+                                </span>
+                                <span>
+                                    opacity
+                                </span>
+                                <span>
+                                    background-image
+                                </span>
+                            </div>
+                            <div class="feature-demo">
+                                <h3>
+                                    Where to find it
+                                </h3>
+                                <p>
+                                    Homepage · opening banner
+                                </p>
+                                <h3>
+                                    Try it
+                                </h3>
+                                <p>
+                                    Watch the background fade between four plant images. Reduced-motion settings keep a
+                                    static background.
+                                </p>
+                            </div>
+                            <a class="enhancement-link" href="index.html#home-hero">
+                                Open this feature →
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="enhancement-summary-title" class="enhancement-summary-section">
+            <div class="enhancement-container">
+                <p class="section-kicker">
+                    Technical summary
+                </p>
+                <h2 id="enhancement-summary-title">
+                    Where the enhancements are implemented
+                </h2>
+                <div class="enhancement-table-wrap">
+                    <table class="enhancement-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    Enhancement
+                                </th>
+                                <th scope="col">
+                                    Main technique
+                                </th>
+                                <th scope="col">
+                                    Example
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Fluid page layout
+                                </td>
+                                <td>
+                                    Relative sizing, Grid/Flexbox,
+                                    <code>
+           clamp()
+          </code>
+                                    , media queries
+                                </td>
+                                <td>
+                                    <a href="index.html#featured-species-showcase">
+                                        Homepage
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Responsive hamburger navigation
+                                </td>
+                                <td>
+                                    <code>
+           &lt;details&gt;
+          </code>
+                                    , media queries, transforms
+                                </td>
+                                <td>
+                                    <a href="index.html#responsive-navigation">
+                                        Navigation
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Picture hover focus
+                                </td>
+                                <td>
+                                    <code>
+           :hover
+          </code>
+                                    , transforms, stacking order
+                                </td>
+                                <td>
+                                    <a href="index.html#featured-species-showcase">
+                                        Featured species
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Changing error hints
+                                </td>
+                                <td>
+                                    HTML5 validation +
+                                    <code>
+           :invalid
+          </code>
+                                </td>
+                                <td>
+                                    <a href="contribute.html#form-title">
+                                        Contribution form
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Sticky navigation and guide
+                                </td>
+                                <td>
+                                    <code>
+           position: sticky
+          </code>
+                                </td>
+                                <td>
+                                    <a href="contribute.html#sticky-form-guide">
+                                        Form guide
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Button hover effects
+                                </td>
+                                <td>
+                                    <code>
+           :hover
+          </code>
+                                    , transitions, transforms
+                                </td>
+                                <td>
+                                    <a href="index.html#home-hero">
+                                        Homepage buttons
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Automatic featured collage + text
+                                </td>
+                                <td>
+                                    Coordinated keyframe and opacity animations
+                                </td>
+                                <td>
+                                    <a href="index.html#featured-species-showcase">
+                                        Featured species
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Changing hero pictures
+                                </td>
+                                <td>
+                                    Layered backgrounds, opacity animation, delays
+                                </td>
+                                <td>
+                                    <a href="index.html#home-hero">
+                                        Homepage hero
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="enhancement-note">
+                    These interactions are implemented with HTML5 and CSS only, without JavaScript.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a aria-label="MY Plant Watch home" class="footer-logo-link" href="index.html">
+                    <img alt="MY Plant Watch logo" class="footer-logo" src="styles/images/logo.svg" />
+                    <span>
+                        MY Plant Watch
+                    </span>
+                </a>
+                <p>
+                    Exploring Malaysia's plant biodiversity through citizen science.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h2>
+                    Quick links
+                </h2>
+                <a href="explore.html">
+                    Explore
+                </a>
+                <a href="identify.html">
+                    Identify
+                </a>
+                <a href="contributor.html">
+                    Contributors
+                </a>
+                <a href="contribute.html">
+                    Contribute
+                </a>
+                <a href="acknowledgement.html">
+                    Acknowledgement
+                </a>
+            </div>
+            <div class="footer-contact">
+                <h2>
+                    Contact
+                </h2>
+                <p>
+                    Created by Jimmy Kimathi Musyimi
+                </p>
+                <a href="mailto:102775339@students.swinburne.edu.my">
+                    Email me
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                © 2026 MY Plant Watch
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
