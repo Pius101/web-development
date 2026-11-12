@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <meta content="Send a plant enquiry to the MY Plant Watch citizen science project." name="description"/>
+        <title>Plant Enquiry | MY Plant Watch</title>
+        <link href="styles/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header class="site-header">
+            <nav aria-label="Main navigation" class="navbar">
+                <a aria-label="MY Plant Watch home page" class="site-logo" href="index.html">
+                    <img alt="MY Plant Watch logo" src="styles/images/logo.svg"/>
+                    <span>MY Plant Watch</span>
+                </a>
+                <ul class="nav-links desktop-nav">
+                    <li class="dropdown">
+                        <a href="explore.html">Explore <span aria-hidden="true">▾</span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="families.html">Families</a>
+                            </li>
+                            <li>
+                                <a href="genera.html">Genera</a>
+                            </li>
+                            <li>
+                                <a href="species.html">Species</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="identify.html">Identify</a>
+                    </li>
+                    <li>
+                        <a href="contributor.html">Contributors</a>
+                    </li>
+                    <li>
+                        <a href="contribute.html">Contribute</a>
+                    </li>
+                    <li>
+                        <a aria-current="page" class="active-nav" href="enquiry.html">Enquiry</a>
+                    </li>
+                    <li>
+                        <a href="profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <a href="enhancement1.html">Enhancements</a>
+                    </li>
+                    <li>
+                        <a href="acknowledgement.html">Acknowledgement</a>
+                    </li>
+                </ul>
+                <details class="mobile-nav">
+                    <summary aria-label="Open navigation menu" class="hamburger">
+                        <span></span><span></span><span></span>
+                    </summary>
+                    <ul class="mobile-nav-links">
+                        <li>
+                            <a href="explore.html">Explore</a>
+                        </li>
+                        <li class="mobile-submenu-title">Explore categories</li>
+                        <li class="mobile-subitem">
+                            <a href="families.html">Families</a>
+                        </li>
+                        <li class="mobile-subitem">
+                            <a href="genera.html">Genera</a>
+                        </li>
+                        <li class="mobile-subitem">
+                            <a href="species.html">Species</a>
+                        </li>
+                        <li>
+                            <a href="identify.html">Identify</a>
+                        </li>
+                        <li>
+                            <a href="contributor.html">Contributors</a>
+                        </li>
+                        <li>
+                            <a href="contribute.html">Contribute</a>
+                        </li>
+                        <li>
+                            <a aria-current="page" class="active-nav" href="enquiry.html">Enquiry</a>
+                        </li>
+                        <li>
+                            <a href="profile.html">Profile</a>
+                        </li>
+                        <li>
+                            <a href="enhancement1.html">Enhancements</a>
+                        </li>
+                        <li>
+                            <a href="acknowledgement.html">Acknowledgement</a>
+                        </li>
+                    </ul>
+                </details>
+            </nav>
+        </header>
+        <main>
+            <section aria-labelledby="enquiry-title" class="enquiry-hero">
+                <div class="contributor-container enquiry-hero-inner">
+                    <p class="eyebrow">Plant enquiries</p>
+                    <h1 id="enquiry-title">Ask About Malaysian Plants</h1>
+                    <p class="enquiry-lead">
+                        Send an enquiry about a plant family, genus, species, identification or contribution. Complete every required field and your browser will check the information before submission.
+                    </p>
+                </div>
+            </section>
+            <section aria-labelledby="enquiry-form-title" class="enquiry-section">
+                <div class="contributor-container enquiry-layout">
+                    <aside aria-labelledby="enquiry-help-title" class="enquiry-help">
+                        <p class="section-kicker">Before you submit</p>
+                        <h2 id="enquiry-help-title">Enquiry tips</h2>
+                        <ul>
+                            <li>Use letters and spaces only for first and last names.</li>
+                            <li>Enter a valid email address.</li>
+                            <li>Use a phone number containing up to 10 digits.</li>
+                            <li>Select the plant classification area that best matches your question.</li>
+                            <li>Give enough detail in the comments box for the enquiry to be understood.</li>
+                        </ul>
+                        <p>All fields marked as required must be completed before the form can be submitted.</p>
+                    </aside>
+                    <div class="enquiry-form-wrap">
+                        <p class="section-kicker">Enquiry form</p>
+                        <h2 id="enquiry-form-title">Tell us what you would like to know</h2>
+                        <p class="form-intro">The validation on this form uses standard HTML5 attributes and does not use JavaScript.</p>
+                        <form action="enquiry.html" class="enquiry-form" method="get">
+                            <fieldset>
+                                <legend>Your details</legend>
+                                <div class="form-row two-column-row">
+                                    <div class="form-group">
+                                        <label for="first-name">First name</label>
+                                        <input autocomplete="given-name" id="first-name" maxlength="25" name="first_name" pattern="[A-Za-z ]+" placeholder=" " required="" title="Use alphabetic letters and spaces only." type="text"/>
+                                        <small class="input-hint hint-normal">Maximum 25 characters. Letters and spaces only.</small>
+                                        <small class="input-hint hint-error">Please use letters and spaces only.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="last-name">Last name</label>
+                                        <input autocomplete="family-name" id="last-name" maxlength="25" name="last_name" pattern="[A-Za-z ]+" placeholder=" " required="" title="Use alphabetic letters and spaces only." type="text"/>
+                                        <small class="input-hint hint-normal">Maximum 25 characters. Letters and spaces only.</small>
+                                        <small class="input-hint hint-error">Please use letters and spaces only.</small>
+                                    </div>
+                                </div>
+                                <div class="form-row two-column-row">
+                                    <div class="form-group">
+                                        <label for="email">Email address</label>
+                                        <input autocomplete="email" id="email" name="email" placeholder="name@example.com" required="" type="email"/>
+                                        <small class="input-hint hint-normal">Enter a valid email address.</small>
+                                        <small class="input-hint hint-error">Please enter an email address in a valid format, such as name@example.com.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Phone number</label>
+                                        <input autocomplete="tel" id="phone" maxlength="10" name="phone" pattern="[0-9]{1,10}" placeholder="0123456789" required="" title="Use numbers only, with a maximum of 10 digits." type="tel"/>
+                                        <small class="input-hint hint-normal">Numbers only, maximum 10 digits.</small>
+                                        <small class="input-hint hint-error">Please enter numbers only, using no more than 10 digits.</small>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Your enquiry</legend>
+                                <div class="form-group">
+                                    <label for="classification">Plant classification area</label>
+                                    <select id="classification" name="classification" required="">
+                                        <option disabled="" selected="" value="">Select an area</option>
+                                        <option value="family">Family</option>
+                                        <option value="genus">Genus</option>
+                                        <option value="species">Species</option>
+                                        <option value="identification">Identification</option>
+                                        <option value="contribution">Contribution</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <span class="form-label">Type of enquiry</span>
+                                    <div aria-label="Type of enquiry" class="choice-grid" role="group">
+                                        <label class="choice-option">
+                                            <input name="enquiry_type" required="" type="radio" value="plant-information"/>
+                                            <span>Plant information</span>
+                                        </label>
+                                        <label class="choice-option">
+                                            <input name="enquiry_type" type="radio" value="identification"/>
+                                            <span>Identification</span>
+                                        </label>
+                                        <label class="choice-option">
+                                            <input name="enquiry_type" type="radio" value="contribution"/>
+                                            <span>Contribution</span>
+                                        </label>
+                                        <label class="choice-option">
+                                            <input name="enquiry_type" type="radio" value="other"/>
+                                            <span>Other</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comments">Comments</label>
+                                    <textarea cols="50" id="comments" name="comments" placeholder="Describe your question in as much useful detail as possible." required="" rows="7"></textarea>
+                                </div>
+                                <div class="form-group confirmation-group">
+                                    <label class="choice-option confirmation-option">
+                                        <input name="confirmation" required="" type="checkbox" value="confirmed"/>
+                                        <span>I confirm that the information entered above is correct.</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <div class="form-actions">
+                                <button class="primary-button form-submit" type="submit">Submit Enquiry</button>
+                                <button class="reset-button" type="reset">Reset Form</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section aria-labelledby="topics-title" class="enquiry-section enquiry-topics">
+                <div class="contributor-container">
+                    <p class="section-kicker">What can you ask about?</p>
+                    <h2 id="topics-title">Common enquiry topics</h2>
+                    <div class="enquiry-topic-grid">
+                        <article>
+                            <h2>Classification</h2>
+                            <p>Ask about how a plant belongs to a family, genus or species and how those levels are related.</p>
+                        </article>
+                        <article>
+                            <h2>Identification</h2>
+                            <p>Ask questions about the plant identification interface or what information an identification result may contain.</p>
+                        </article>
+                        <article>
+                            <h2>Contributions</h2>
+                            <p>Ask about submitting plant observations, photographs or comments to the MY Plant Watch project.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a aria-label="MY Plant Watch home" class="footer-logo-link" href="index.html">
+                        <img alt="MY Plant Watch logo" class="footer-logo" src="styles/images/logo.svg"/>
+                        <span>MY Plant Watch</span>
+                    </a>
+                    <p>Exploring Malaysia's plant biodiversity through citizen science.</p>
+                </div>
+                <div class="footer-links">
+                    <h2>Quick links</h2>
+                    <a href="explore.html">Explore</a>
+                    <a href="identify.html">Identify</a>
+                    <a href="contributor.html">Contributors</a>
+                    <a href="contribute.html">Contribute</a>
+                    <a href="acknowledgement.html">Acknowledgement</a>
+                </div>
+                <div class="footer-contact">
+                    <h2>Contact</h2>
+                    <p>Created by Your Name</p>
+                    <!-- Replace YOUR_STUDENT_EMAIL@student.swin.edu.au below with your real student email address. -->
+                    <a href="mailto:YOUR_STUDENT_EMAIL@student.swin.edu.au">Email me</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 MY Plant Watch</p>
+            </div>
+        </footer>
+    </body>
+</html>

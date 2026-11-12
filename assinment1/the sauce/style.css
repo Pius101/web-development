@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 12px 24px;
+    background-color: #0d6efd;
+    color: white;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.brand img {
+    width: 120px;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+#profile-heading {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* Profile page layout, based on the sample profile. */
+.profile-page {
+    background: #fff;
+    color: #222;
+    line-height: 1.5;
+}
+
+.profile {
+    width: min(100% - 32px, 700px);
+    margin: 40px auto;
+    text-align: center;
+}
+
+.profile-photo {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 8px;
+    object-fit: cover;
+}
+
+.profile h1,
+.profile-id,
+.profile-course {
+    margin: 2px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.profile-details {
+    width: 100%;
+    max-width: 490px;
+    margin: 30px auto 22px;
+    border: 2px solid #8eaadb;
+    border-spacing: 3px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.profile-details caption {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+}
+
+.profile-details th,
+.profile-details td {
+    padding: 7px 10px;
+    border: 1px solid #8eaadb;
+    overflow-wrap: anywhere;
+}
+
+.profile-details th {
+    width: 30%;
+    background: #d9e2f3;
+    font-weight: 400;
+}
+
+.profile-details td {
+    background: #8eaadb;
+}
+
+.profile-email {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 195px;
+    padding: 7px 16px;
+    border: 1px solid #365f9d;
+    border-radius: 5px;
+    background: #4472c4;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.profile-email:hover {
+    background: #365f9d;
+}
+
+.profile-email:focus-visible {
+    outline: 3px solid #222;
+    outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+    .profile {
+        margin: 24px auto;
+    }
+
+    .profile-details th,
+    .profile-details td {
+        padding: 6px;
+    }
+}

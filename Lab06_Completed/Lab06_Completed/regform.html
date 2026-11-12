@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web development registration form">
+    <meta name="keywords" content="Registration Form, Responsive Layout">
+    <title>Web Development Registration Form</title>
+
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Registration Form -->
+    <h1>Registration Form</h1>
+
+    <form method="post" action="mailto:abc@gmail.com">
+        <h2>Account Information</h2>
+
+        <p>
+            <label>User ID
+                <input type="text" name="uid" id="uid" autocomplete="username" required>
+            </label>
+        </p>
+        <p>
+            <label>Password
+                <input type="password" name="pwd1" id="pwd1" autocomplete="new-password" required>
+            </label>
+        </p>
+        <p>
+            <label>Retype Password
+                <input type="password" name="pwd2" id="pwd2" autocomplete="new-password" required>
+            </label>
+        </p>
+
+        <h2>User Information</h2>
+        <p>
+            <label>Name
+                <input type="text" name="username" id="username" autocomplete="name" required>
+            </label>
+        </p>
+
+        <p role="group" aria-label="Gender">
+            Gender
+            <label>
+                <input type="radio" name="gender" value="M" required>Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="F">Female
+            </label>
+        </p>
+
+        <div class="submit-container">
+            <input class="button" type="submit" value="Test Register">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <script src="script.js"></script>
+
+  </head> 
+  <body>
+
+				<h1>Honda</h1>
+
+                <a class="button_1" onclick="storeitem('Honda')">
+					<button type="submit" name="button">Book now</button>
+                </a>
+				
+				
+   
+   
+   </body>
+</html>
+<fieldset>
+  <legend>
+    Your details
+  </legend>
+  <div class="form-row two-column-row">
+    <div class="form-group">
+      <label for="first-name">
+        First name
+      </label>
+      <input autocomplete="given-name" id="first-name" maxlength="25" name="first_name" pattern="[A-Za-z ]+"
+        placeholder=" " required="" title="Use alphabetic letters and spaces only." type="text" />
+      <small class="input-hint hint-error">
+        Please use letters and spaces only.
+      </small>
+    </div>
+    <div class="form-group">
+      <label for="last-name">
+        Last name
+      </label>
+      <input autocomplete="family-name" id="last-name" maxlength="25" name="last_name" pattern="[A-Za-z ]+"
+        placeholder=" " required="" title="Use alphabetic letters and spaces only." type="text" />
+      <small class="input-hint hint-error">
+        Please use letters and spaces only.
+      </small>
+    </div>
+  </div>
+  <div class="form-row two-column-row">
+    <div class="form-group">
+      <label for="email">
+        Email address
+      </label>
+      <input autocomplete="email" id="email" name="email" placeholder="name@example.com" required="" type="email" />
+      <small class="input-hint hint-error">
+        Please enter an email address in a valid format, such as name@example.com.
+      </small>
+    </div>
+    <div class="form-group">
+      <label for="phone">
+        Phone number
+      </label>
+      <input autocomplete="tel" id="phone" maxlength="10" name="phone" pattern="[0-9]{1,10}" placeholder="0123456789"
+        required="" title="Use numbers only, with a maximum of 10 digits." type="tel" />
+      <small class="input-hint hint-error">
+        Please enter numbers only, using no more than 10 digits.
+      </small>
+    </div>
+  </div>
+</fieldset>
+<fieldset>
+  <legend>
+    Your enquiry
+  </legend>
+  <div class="form-group">
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="" />
+  </div>
+  <div class="form-group">
+    <label for="classification">
+      Plant classification area
+    </label>
+    <select id="classification" name="classification" required="" onchange="updateSubject()">
+      <option value="" disabled="" selected="">Select an area</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <span class="form-label">
+      Type of enquiry
+    </span>
+    <div aria-label="Type of enquiry" class="choice-grid" role="group">
+      <label class="choice-option">
+        <input name="enquiry_type" required="" type="radio" value="plant-information" />
+        <span>
+          Plant information
+        </span>
+      </label>
+      <label class="choice-option">
+        <input name="enquiry_type" type="radio" value="identification" />
+        <span>
+          Identification
+        </span>
+      </label>
+      <label class="choice-option">
+        <input name="enquiry_type" type="radio" value="contribution" />
+        <span>
+          Contribution
+        </span>
+      </label>
+      <label class="choice-option">
+        <input name="enquiry_type" type="radio" value="other" />
+        <span>
+          Other
+        </span>
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="comments">
+      Comments
+    </label>
+    <textarea cols="50" id="comments" name="comments"
+      placeholder="Describe your question in as much useful detail as possible." required="" rows="7"></textarea>
+  </div>
+  <div class="form-group confirmation-group">
+    <label class="choice-option confirmation-option">
+      <input name="confirmation" required="" type="checkbox" value="confirmed" />
+      <span>
+        I confirm that the information entered above is correct.
+      </span>
+    </label>
+  </div>
+</fieldset>
+<div class="form-actions">
+  <button class="primary-button form-submit" type="submit">
+    Submit Enquiry
+  </button>
+  <button class="reset-button" type="reset">
+    Reset Form
+  </button>
+</div>

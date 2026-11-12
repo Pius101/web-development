@@ -1,0 +1,26 @@
+MY Plant Watch downloaded image mapping
+======================================
+
+Duplicates removed:
+- Dipterocarpu.jpg = exact duplicate of Dipterocarpus_retusus.jpg
+- Dipterocarpus grandiflorus1.jpg = near-duplicate of Dipterocarpus grandifloras.jpg
+
+Family cards:
+- Dipterocarpaceae -> family-dipterocarpaceae.jpg (representative Dipterocarpus grandiflorus photo)
+- Myristicaceae -> family-myristicaceae.jpg (representative Myristica fragrans botanical image)
+
+Genus cards:
+- Dipterocarpus -> genus-dipterocarpus.jpg
+- Vatica -> genus-vatica.jpg
+- Horsfieldia -> genus-horsfieldia.jpg
+- Knema -> genus-knema.jpg
+
+Species cards:
+- Dipterocarpus grandiflorus -> species-dipterocarpus-grandiflorus-1.jpg + -2.jpg
+- Dipterocarpus kunstleri -> species-dipterocarpus-kunstleri.jpg
+- Vatica borneensis -> species-vatica-borneensis.jpg
+- Vatica flavida -> species-vatica-flavida-1.jpg, -2.jpg, -3.jpg
+- Horsfieldia flocculosa -> species-horsfieldia-flocculosa.jpg
+- Horsfieldia penangiana -> existing SVG retained (no exact downloaded photograph found)
+- Knema communis -> species-knema-communis-1.png, -2.jpeg, and species-knema-communis.jpg
+- Knema mandaharan -> species-knema-mandaharan.jpg

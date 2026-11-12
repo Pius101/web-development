@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <meta content="Plant identification interface for exploring Malaysian plant information on MY Plant Watch." name="description"/>
+        <title>Identify a Plant | MY Plant Watch</title>
+        <link href="styles/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header class="site-header">
+            <nav aria-label="Main navigation" class="navbar">
+                <a aria-label="MY Plant Watch home page" class="site-logo" href="index.html">
+                    <img alt="MY Plant Watch logo" src="styles/images/logo.svg"/>
+                    <span>MY Plant Watch</span>
+                </a>
+                <ul class="nav-links desktop-nav">
+                    <li class="dropdown">
+                        <a href="explore.html">Explore <span aria-hidden="true">▾</span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="families.html">Families</a>
+                            </li>
+                            <li>
+                                <a href="genera.html">Genera</a>
+                            </li>
+                            <li>
+                                <a href="species.html">Species</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a aria-current="page" class="active-nav" href="identify.html">Identify</a>
+                    </li>
+                    <li>
+                        <a href="contributor.html">Contributors</a>
+                    </li>
+                    <li>
+                        <a href="contribute.html">Contribute</a>
+                    </li>
+                    <li>
+                        <a href="enquiry.html">Enquiry</a>
+                    </li>
+                    <li>
+                        <a href="profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <a href="enhancement1.html">Enhancements</a>
+                    </li>
+                    <li>
+                        <a href="acknowledgement.html">Acknowledgement</a>
+                    </li>
+                </ul>
+                <details class="mobile-nav">
+                    <summary aria-label="Open navigation menu" class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </summary>
+                    <ul class="mobile-nav-links">
+                        <li>
+                            <a href="explore.html">Explore</a>
+                        </li>
+                        <li class="mobile-submenu-title">Explore categories</li>
+                        <li class="mobile-subitem">
+                            <a href="families.html">Families</a>
+                        </li>
+                        <li class="mobile-subitem">
+                            <a href="genera.html">Genera</a>
+                        </li>
+                        <li class="mobile-subitem">
+                            <a href="species.html">Species</a>
+                        </li>
+                        <li>
+                            <a aria-current="page" class="active-nav" href="identify.html">Identify</a>
+                        </li>
+                        <li>
+                            <a href="contributor.html">Contributors</a>
+                        </li>
+                        <li>
+                            <a href="contribute.html">Contribute</a>
+                        </li>
+                        <li>
+                            <a href="enquiry.html">Enquiry</a>
+                        </li>
+                        <li>
+                            <a href="profile.html">Profile</a>
+                        </li>
+                        <li>
+                            <a href="enhancement1.html">Enhancements</a>
+                        </li>
+                        <li>
+                            <a href="acknowledgement.html">Acknowledgement</a>
+                        </li>
+                    </ul>
+                </details>
+            </nav>
+        </header>
+        <main>
+            <section aria-labelledby="identify-title" class="identify-hero">
+                <div class="identify-container identify-hero-inner">
+                    <p class="eyebrow">Plant identification</p>
+                    <h1 id="identify-title">Identify a Malaysian Plant</h1>
+                    <p class="identify-lead">Upload a clear plant photograph or enter a plant name to explore identification information and related species details.</p>
+                </div>
+            </section>
+            <section aria-labelledby="tool-title" class="identify-section identify-tool-section">
+                <div class="identify-container identify-tool-grid">
+                    <article class="identify-panel">
+                        <p class="section-kicker">Photo identification</p>
+                        <h2 id="tool-title">Upload a plant photo</h2>
+                        <p class="identify-muted">Choose a photograph that clearly shows the leaves, flowers, fruit or overall form of the plant.</p>
+                        <div class="upload-dropzone">
+                            <div aria-hidden="true" class="upload-icon">↥</div>
+                            <label for="plant-photo">Choose a plant photograph</label>
+                            <input accept="image/*" id="plant-photo" name="plant-photo" type="file"/>
+                            <p>JPG, PNG or another common image format</p>
+                        </div>
+                        <button class="primary-button identify-button" type="button">Identify Plant</button>
+                    </article>
+                    <article class="identify-panel search-panel">
+                        <p class="section-kicker">Plant search</p>
+                        <h2>Search by plant name</h2>
+                        <p class="identify-muted">
+                            If you already know part of the plant name, this search interface provides another way to begin exploring the collection.
+                        </p>
+                        <form action="identify.html" class="identify-search-row" method="get">
+                            <label class="sr-only" for="plant-search">Plant name</label>
+                            <input id="plant-search" maxlength="50" name="plant-search" pattern="[A-Za-z ]+" placeholder="e.g. Dipterocarpus grandiflorus" required="" title="Use alphabetic letters and spaces only." type="text"/>
+                            <button type="submit">Search</button>
+                            <p class="search-hint input-hint hint-normal">Letters and spaces only. Numbers are not accepted.</p>
+                            <p class="search-hint input-hint hint-error">Please remove numbers or symbols and use letters and spaces only.</p>
+                        </form>
+                        <figure class="identify-example-figure">
+                            <img alt="Photograph of Paphiopedilum rothschildianum" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Paphiopedilum_rothschildianum_%2814177345749%29.jpg"/>
+                            <figcaption>Plant reference: <em>Paphiopedilum rothschildianum</em>.</figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </section>
+            <section aria-labelledby="result-title" class="identify-section identify-result-section">
+                <div class="identify-container">
+                    <p class="section-kicker">Plant result</p>
+                    <h2 id="result-title">Identification information</h2>
+                    <p class="identify-section-intro">Identification results can help visitors recognise a plant, understand its classification and continue exploring related species.</p>
+                    <div class="result-card">
+                        <div class="result-card-image">
+                            <img alt="Photograph of Paphiopedilum rothschildianum" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Paphiopedilum_rothschildianum_%2814177345749%29.jpg"/>
+                        </div>
+                        <div class="result-card-content">
+                            <span class="result-status">Plant match</span>
+                            <h2>Paphiopedilum rothschildianum</h2>
+                            <p class="result-common-name">Scientific name and classification details for the selected plant.</p>
+                            <dl class="result-details">
+                                <div>
+                                    <dt>Family</dt>
+                                    <dd>Orchidaceae</dd>
+                                </div>
+                                <div>
+                                    <dt>Genus</dt>
+                                    <dd>Paphiopedilum</dd>
+                                </div>
+                                <div>
+                                    <dt>Location</dt>
+                                    <dd>Sabah, Borneo</dd>
+                                </div>
+                                <div>
+                                    <dt>Environment</dt>
+                                    <dd>Wet tropical forest habitat.</dd>
+                                </div>
+                            </dl>
+                            <a class="text-link" href="species.html">Explore species information →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section aria-labelledby="guide-title" class="identify-section identify-guide-section">
+                <div class="identify-container clearfix">
+                    <aside aria-labelledby="photo-tips-title" class="identify-aside">
+                        <h2 id="photo-tips-title">Photo Tips</h2>
+                        <p>A useful identification photo should make the plant's visible features easy to inspect.</p>
+                        <ul>
+                            <li>Use good natural lighting.</li>
+                            <li>Keep the plant in focus.</li>
+                            <li>Include leaves, flowers or fruit when possible.</li>
+                            <li>Avoid heavy filters or effects.</li>
+                        </ul>
+                    </aside>
+                    <article class="identify-guide-content">
+                        <p class="section-kicker">How it works</p>
+                        <h2 id="guide-title">From photograph to plant information</h2>
+                        <p>Use the identification page as a starting point when you encounter an unfamiliar plant. Clear photographs and accurate names make it easier to compare the plant with information in the Explorer.</p>
+                        <ol class="identify-steps">
+                            <li>
+                                <strong>Select a photograph</strong> showing the plant clearly.</li>
+                            <li>
+                                <strong>Start identification</strong> using the Identify Plant button.</li>
+                            <li>
+                                <strong>Review the suggested result</strong>, including scientific name and classification.</li>
+                            <li>
+                                <strong>Read supporting information</strong> such as location, environment and care information.</li>
+                            <li>
+                                <strong>Continue to Explorer</strong> to compare the plant with related families, genera and species.</li>
+                        </ol>
+                    </article>
+                </div>
+            </section>
+            <section aria-labelledby="identify-terms-title" class="identify-section identify-terms-section">
+                <div class="identify-container">
+                    <p class="section-kicker">Identification terms</p>
+                    <h2 id="identify-terms-title">Useful terms on this page</h2>
+                    <dl class="identify-definition-list">
+                        <div>
+                            <dt>Scientific name</dt>
+                            <dd>The formal name used to identify a plant species consistently.</dd>
+                        </div>
+                        <div>
+                            <dt>Common name</dt>
+                            <dd>A familiar everyday name that may be used for a plant in a particular place or community.</dd>
+                        </div>
+                        <div>
+                            <dt>Identification result</dt>
+                            <dd>The plant information shown after an image or search request has been analysed.</dd>
+                        </div>
+                        <div>
+                            <dt>Habitat</dt>
+                            <dd>The natural environment or type of location in which a plant grows.</dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+            <section aria-labelledby="result-fields-title" class="identify-section identify-table-section">
+                <div class="identify-container">
+                    <p class="section-kicker">Result information</p>
+                    <h2 id="result-fields-title">Information presented after identification</h2>
+                    <div class="table-wrap">
+                        <table class="explore-table identify-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Information</th>
+                                    <th scope="col">Purpose</th>
+                                    <th scope="col">Reference</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Scientific name</td>
+                                    <td>Provides the formal plant identity</td>
+                                    <td>
+                                        <em>Paphiopedilum rothschildianum</em>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Classification</td>
+                                    <td>Places the plant within family and genus</td>
+                                    <td>Orchidaceae → <em>Paphiopedilum</em>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Location</td>
+                                    <td>Shows where the plant may naturally occur</td>
+                                    <td>Sabah, Borneo</td>
+                                </tr>
+                                <tr>
+                                    <td>Care and environment</td>
+                                    <td>Gives supporting information for the identified plant</td>
+                                    <td>Wet tropical forest habitat</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a aria-label="MY Plant Watch home" class="footer-logo-link" href="index.html">
+                        <img alt="MY Plant Watch logo" class="footer-logo" src="styles/images/logo.svg"/>
+                        <span>MY Plant Watch</span>
+                    </a>
+                    <p>Exploring Malaysia's plant biodiversity through citizen science.</p>
+                </div>
+                <div class="footer-links">
+                    <h2>Quick links</h2>
+                    <a href="explore.html">Explore</a>
+                    <a href="identify.html">Identify</a>
+                    <a href="contributor.html">Contributors</a>
+                    <a href="contribute.html">Contribute</a>
+                    <a href="acknowledgement.html">Acknowledgement</a>
+                </div>
+                <div class="footer-contact">
+                    <h2>Contact</h2>
+                    <p>Created by Your Name</p>
+                    <!-- Replace YOUR_STUDENT_EMAIL@student.swin.edu.au below with your real student email address. -->
+                    <a href="mailto:YOUR_STUDENT_EMAIL@student.swin.edu.au">Email me</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 MY Plant Watch</p>
+            </div>
+        </footer>
+    </body>
+</html>

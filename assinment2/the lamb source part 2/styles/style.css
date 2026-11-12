@@ -8,6 +8,8 @@
     --forest: #173a2a;
     --forest-deep: #0d261b;
     --leaf: #dcefdc;
+    --leaf-green: #587f5b;
+    --forest-soft: #466b52;
     --cream: #f6f3e8;
     --text: #17221c;
     --white: #ffffff;
@@ -4301,131 +4303,109 @@ h2 {
 
 
 
-nn
 
-/* ==========================================================\n   Unified solid-green page heroes (all pages except index)\n   ========================================================== */
-n.explore-hero,
-n.taxonomy-hero,
-n.contributor-hero,
-n.contribute-hero,
-n.identify-hero,
-n.enquiry-hero,
-n.profile-heading-section,
-n.enhancement-hero,
-n.contributor-profile-hero,
-n.ack-hero {
-    n background: var(--forest) !important;
-    n
+
+/* ==========================================================
+Unified solid-green page heroes (all pages except index)
+========================================================== */
+.explore-hero,
+.taxonomy-hero,
+.contributor-hero,
+.contribute-hero,
+.identify-hero,
+.enquiry-hero,
+.profile-heading-section,
+.enhancement-hero,
+.contributor-profile-hero,
+.ack-hero {
+    background: var(--forest) !important;
 }
-
-nn
 
 /* Remove decorative hero graphics so the colour stays truly solid. */
-n.explore-hero::after,
-n.enhancement-hero::after {
-    n display: none;
-    n
+.explore-hero::after,
+.enhancement-hero::after {
+    display: none;
 }
-
-nn
 
 /* Enquiry previously used dark text because its hero was light. */
-n.enquiry-hero {
-    n color: var(--white);
-    n border-bottom-color: rgba(255, 255, 255, 0.10);
-    n
+.enquiry-hero {
+    color: var(--white);
+    border-bottom-color: rgba(255, 255, 255, 0.10);
 }
 
-nn.enquiry-hero h1,
-n.enquiry-hero .enquiry-lead,
-n.enquiry-hero .section-kicker {
-    n color: var(--white);
-    n
+.enquiry-hero h1,
+.enquiry-hero .enquiry-lead,
+.enquiry-hero .section-kicker {
+    color: var(--white);
 }
-
-nn
 
 /* ---------- Local species image links ---------- */
-n.species-image-link {
-    n display: block;
-    n color: inherit;
-    n text-decoration: none;
-    n
+.species-image-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
 }
 
-nn.species-image-link:focus-visible {
-    n outline: 3px solid var(--forest);
-    n outline-offset: 4px;
-    n border-radius: 0.8rem;
-    n
+.species-image-link:focus-visible {
+    outline: 3px solid var(--forest);
+    outline-offset: 4px;
+    border-radius: 0.8rem;
 }
 
-nn.species-image-grid {
-    n display: grid;
-    n grid-template-columns: repeat(4, minmax(0, 1fr));
-    n gap: 1.25rem;
-    n margin-top: 2rem;
-    n
+.species-image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.25rem;
+    margin-top: 2rem;
 }
 
-nn.species-image-card {
-    n overflow: hidden;
-    n border: 1px solid rgba(23, 58, 42, 0.14);
-    n border-radius: 1rem;
-    n background: var(--white);
-    n box-shadow: 0 10px 24px rgba(23, 58, 42, 0.08);
-    n
+.species-image-card {
+    overflow: hidden;
+    border: 1px solid rgba(23, 58, 42, 0.14);
+    border-radius: 1rem;
+    background: var(--white);
+    box-shadow: 0 10px 24px rgba(23, 58, 42, 0.08);
 }
 
-nn.species-image-card a {
-    n display: grid;
-    n height: 100%;
-    n color: var(--forest-deep);
-    n text-decoration: none;
-    n
+.species-image-card a {
+    display: grid;
+    height: 100%;
+    color: var(--forest-deep);
+    text-decoration: none;
 }
 
-nn.species-image-card img {
-    n width: 100%;
-    n aspect-ratio: 4 / 3;
-    n display: block;
-    n object-fit: contain;
-    n background: #e7f1e4;
-    n
+.species-image-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    display: block;
+    object-fit: contain;
+    background: #e7f1e4;
 }
 
-nn.species-image-card span {
-    n display: block;
-    n padding: 0.85rem 1rem 1rem;
-    n font-weight: 700;
-    n
+.species-image-card span {
+    display: block;
+    padding: 0.85rem 1rem 1rem;
+    font-weight: 700;
 }
 
-nn.species-image-card a:hover,
-n.species-image-card a:focus-visible {
-    n background: #eef5ec;
-    n
+.species-image-card a:hover,
+.species-image-card a:focus-visible {
+    background: #eef5ec;
 }
 
-nn@media (max-width: 900px) {
-    n .species-image-grid {
-        n grid-template-columns: repeat(2, minmax(0, 1fr));
-        n
+@media (max-width: 900px) {
+    .species-image-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
     }
-
-    n
 }
 
-nn@media (max-width: 560px) {
-    n .species-image-grid {
-        n grid-template-columns: 1fr;
-        n
+@media (max-width: 560px) {
+    .species-image-grid {
+        grid-template-columns: 1fr;
+
     }
-
-    n
 }
-
-n
 
 /* ==========================================================
    Contributor profile directory cards
@@ -4438,6 +4418,14 @@ n
 }
 
 .contributor-person-card {
+    /* Keep anchors and buttons visually identical. */
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 0;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
     display: flex;
     min-height: 300px;
     flex-direction: column;
@@ -4469,7 +4457,9 @@ n
     text-transform: uppercase;
 }
 
-.contributor-person-card h3 {
+.contributor-person-card h3,
+.contributor-person-name {
+    font-weight: 700;
     margin: 0;
     color: var(--forest-deep);
     font-size: clamp(1.9rem, 3vw, 2.45rem);
@@ -4483,12 +4473,16 @@ n
     margin: 0;
 }
 
-.contributor-person-details div {
+.contributor-person-details div,
+.contributor-person-detail {
+    display: block;
     padding: 0.8rem 0;
     border-top: 1px solid rgba(13, 38, 27, 0.15);
 }
 
-.contributor-person-details dt {
+.contributor-person-details dt,
+.contributor-person-term {
+    display: block;
     color: #58705f;
     font-size: 0.76rem;
     font-weight: 800;
@@ -4496,7 +4490,9 @@ n
     text-transform: uppercase;
 }
 
-.contributor-person-details dd {
+.contributor-person-details dd,
+.contributor-person-value {
+    display: block;
     margin: 0.2rem 0 0;
     color: var(--forest-deep);
     font-weight: 700;
@@ -5642,7 +5638,7 @@ n
     margin-top: 1.5rem;
 }
 
-.secondary-button {
+.explore-next-buttons .secondary-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -5655,8 +5651,8 @@ n
     text-decoration: none;
 }
 
-.secondary-button:hover,
-.secondary-button:focus-visible {
+.explore-next-buttons .secondary-button:hover,
+.explore-next-buttons .secondary-button:focus-visible {
     color: var(--white);
     background: var(--forest);
 }

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <meta content="Enhancements implemented in the MY Plant Watch COS10005 website using HTML5 and CSS." name="description"/>
+        <title>Enhancements | MY Plant Watch</title>
+        <link href="styles/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header class="site-header">
+            <nav aria-label="Main navigation" class="navbar">
+                <a aria-label="MY Plant Watch home page" class="site-logo" href="index.html">
+                    <img alt="MY Plant Watch logo" src="styles/images/logo.svg"/>
+                    <span>MY Plant Watch</span>
+                </a>
+                <ul class="nav-links desktop-nav">
+                    <li class="dropdown">
+                        <a href="explore.html">Explore <span aria-hidden="true">▾</span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="families.html">Families</a>
+                            </li>
+                            <li>
+                                <a href="genera.html">Genera</a>
+                            </li>
+                            <li>
+                                <a href="species.html">Species</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="identify.html">Identify</a>
+                    </li>
+                    <li>
+                        <a href="contributor.html">Contributors</a>
+                    </li>
+                    <li>
+                        <a href="contribute.html">Contribute</a>
+                    </li>
+                    <li>
+                        <a href="enquiry.html">Enquiry</a>
+                    </li>
+                    <li>
+                        <a href="profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <a aria-current="page" class="active-nav" href="enhancement1.html">Enhancements</a>
+                    </li>
+                    <li>
+                        <a href="acknowledgement.html">Acknowledgement</a>
+                    </li>
+                </ul>
+                <details class="mobile-nav">
+                    <summary aria-label="Open navigation menu" class="hamburger">
+                        <span></span><span></span><span></span>
+                    </summary>
+                    <ul class="mobile-nav-links">
+                        <li>
+                            <a href="explore.html">Explore</a>
+                        </li>
+                        <li class="mobile-submenu-title">Explore categories</li>
+                        <li class="mobile-subitem">
+                            <a href="families.html">Families</a>
+                        </li>
+                        <li class="mobile-subitem">
+                            <a href="genera.html">Genera</a>
+                        </li>
+                        <li class="mobile-subitem">
+                            <a href="species.html">Species</a>
+                        </li>
+                        <li>
+                            <a href="identify.html">Identify</a>
+                        </li>
+                        <li>
+                            <a href="contributor.html">Contributors</a>
+                        </li>
+                        <li>
+                            <a href="contribute.html">Contribute</a>
+                        </li>
+                        <li>
+                            <a href="enquiry.html">Enquiry</a>
+                        </li>
+                        <li>
+                            <a href="profile.html">Profile</a>
+                        </li>
+                        <li>
+                            <a aria-current="page" class="active-nav" href="enhancement1.html">Enhancements</a>
+                        </li>
+                        <li>
+                            <a href="acknowledgement.html">Acknowledgement</a>
+                        </li>
+                    </ul>
+                </details>
+            </nav>
+        </header>
+        <main class="enhancement-page">
+            <section aria-labelledby="enhancement-title" class="enhancement-hero">
+                <div class="enhancement-container enhancement-hero-inner">
+                    <p class="section-kicker">Beyond the basic requirements</p>
+                    <h1 id="enhancement-title">Website Enhancements</h1>
+                    <p>
+                        MY Plant Watch uses several HTML5 and CSS techniques to improve navigation, presentation,
+                        usability and the way plant information is explored. The four enhancements below are implemented
+                        without JavaScript and link directly to examples within the website.
+                    </p>
+                </div>
+            </section>
+            <section aria-labelledby="enhancement-list-title" class="enhancement-section">
+                <div class="enhancement-container">
+                    <p class="section-kicker">Implemented features</p>
+                    <h2 id="enhancement-list-title">Four enhancements used across the site</h2>
+                    <p class="enhancement-intro">
+                        Each enhancement extends the standard page layout with additional responsive, interactive or
+                        accessibility-focused behaviour. The technical notes name the main HTML or CSS techniques used.
+                    </p>
+                    <div class="enhancement-grid">
+                        <article class="enhancement-card" id="enhancement-responsive-menu">
+                            <div class="enhancement-number">01</div>
+                            <div class="enhancement-card-content">
+                                <p class="enhancement-type">Navigation enhancement</p>
+                                <h2>CSS-only responsive hamburger navigation</h2>
+                                <p>
+                                    The full desktop navigation is replaced before it becomes crowded or wraps onto a second line.
+                                    On smaller screens a native HTML <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code>
+                                    menu becomes available instead. The three hamburger lines transform into an X while the menu is open.
+                                </p>
+                                <h3>How it extends the basic site</h3>
+                                <p>
+                                    This provides a compact mobile navigation system without JavaScript. A media query changes which
+                                    navigation is displayed, while CSS transforms animate the hamburger icon and the mobile menu remains
+                                    keyboard accessible because it uses native HTML controls.
+                                </p>
+                                <div aria-label="Techniques used" class="technique-tags">
+                                    <span>&lt;details&gt; / &lt;summary&gt;</span>
+                                    <span>@media</span>
+                                    <span>transform</span>
+                                    <span>:focus-visible</span>
+                                </div>
+                                <a class="enhancement-link" href="index.html#responsive-navigation">View responsive navigation <span aria-hidden="true">→</span></a>
+                            </div>
+                        </article>
+                        <article class="enhancement-card" id="enhancement-validation-feedback">
+                            <div class="enhancement-number">02</div>
+                            <div class="enhancement-card-content">
+                                <p class="enhancement-type">Form usability enhancement</p>
+                                <h2>Dynamic HTML5 validation feedback</h2>
+                                <p>
+                                    The website's forms combine native HTML5 validation with CSS feedback so visitors can see when an
+                                    entered value matches the required format. Instructional hints also change appearance when an input is invalid.
+                                </p>
+                                <h3>How it extends the basic site</h3>
+                                <p>
+                                    Required fields use HTML attributes such as <code>pattern</code>, <code>maxlength</code> and
+                                    <code>required</code>, while CSS pseudo-classes including <code>:valid</code>, <code>:invalid</code>
+                                    and <code>:placeholder-shown</code> provide immediate visual feedback without JavaScript.
+                                </p>
+                                <div aria-label="Techniques used" class="technique-tags">
+                                    <span>:valid / :invalid</span>
+                                    <span>:placeholder-shown</span>
+                                    <span>pattern</span>
+                                    <span>required</span>
+                                </div>
+                                <a class="enhancement-link" href="contribute.html#form-title">View form feedback <span aria-hidden="true">→</span></a>
+                            </div>
+                        </article>
+                        <article class="enhancement-card" id="enhancement-taxonomy-tree">
+                            <div class="enhancement-number">03</div>
+                            <div class="enhancement-card-content">
+                                <p class="enhancement-type">Information-design enhancement</p>
+                                <h2>Interactive plant classification tree</h2>
+                                <p>
+                                    The Explorer converts the Family → Genus → Species hierarchy into a visual tree. Each family,
+                                    genus and species is represented by a styled node that links directly to the related information page.
+                                    This makes the taxonomic relationships easier to understand than a plain list of links.
+                                </p>
+                                <h3>How it extends the basic site</h3>
+                                <p>
+                                    CSS Grid creates the branching layout, pseudo-elements provide directional arrows, and hover/focus
+                                    states give each node interactive feedback. At narrower screen sizes the layout reorganises into a
+                                    vertical structure so the relationships remain readable without horizontal scrolling.
+                                </p>
+                                <div aria-label="Techniques used" class="technique-tags">
+                                    <span>CSS Grid</span>
+                                    <span>::after</span>
+                                    <span>responsive breakpoints</span>
+                                    <span>hover / focus states</span>
+                                </div>
+                                <a class="enhancement-link" href="explore.html#relationship-map">View classification tree <span aria-hidden="true">→</span></a>
+                            </div>
+                        </article>
+                        <article class="enhancement-card" id="enhancement-sticky-guidance">
+                            <div class="enhancement-number">04</div>
+                            <div class="enhancement-card-content">
+                                <p class="enhancement-type">Usability enhancement</p>
+                                <h2>Sticky contextual form guidance</h2>
+                                <p>
+                                    The Contribution and Enquiry pages keep their instructions visible beside the form while a user
+                                    scrolls through longer input sections. This reduces the need to scroll back to the top to check what
+                                    information is expected.
+                                </p>
+                                <h3>How it extends the basic site</h3>
+                                <p>
+                                    The help panel uses <code>position: sticky</code> with an offset that accounts for the sticky site
+                                    header. At smaller screen sizes, a media query returns the panel to normal document flow so it does
+                                    not reduce the available width of the form.
+                                </p>
+                                <div aria-label="Techniques used" class="technique-tags">
+                                    <span>position: sticky</span>
+                                    <span>CSS Grid</span>
+                                    <span>@media</span>
+                                    <span>responsive fallback</span>
+                                </div>
+                                <a class="enhancement-link" href="contribute.html#sticky-form-guide">View sticky guidance <span aria-hidden="true">→</span></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section aria-labelledby="enhancement-summary-title" class="enhancement-summary-section">
+                <div class="enhancement-container">
+                    <p class="section-kicker">Technical summary</p>
+                    <h2 id="enhancement-summary-title">Where each enhancement is implemented</h2>
+                    <div class="enhancement-table-wrap">
+                        <table class="enhancement-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Enhancement</th>
+                                    <th scope="col">Main technique</th>
+                                    <th scope="col">Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Responsive hamburger navigation</td>
+                                    <td>
+                                        <code>&lt;details&gt;</code>, media queries and transforms</td>
+                                    <td>
+                                        <a href="index.html#responsive-navigation">Homepage navigation</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Dynamic HTML5 validation feedback</td>
+                                    <td>
+                                        <code>:valid</code>, <code>:invalid</code> and native validation attributes</td>
+                                    <td>
+                                        <a href="contribute.html#form-title">Contribution form</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Plant classification tree</td>
+                                    <td>CSS Grid, pseudo-elements and responsive states</td>
+                                    <td>
+                                        <a href="explore.html#relationship-map">Explorer classification tree</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Sticky form guidance</td>
+                                    <td>
+                                        <code>position: sticky</code> with responsive fallback</td>
+                                    <td>
+                                        <a href="contribute.html#sticky-form-guide">Contribution form</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="enhancement-note">
+                        All four enhancements are implemented with HTML5 and CSS only.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a aria-label="MY Plant Watch home" class="footer-logo-link" href="index.html">
+                        <img alt="MY Plant Watch logo" class="footer-logo" src="styles/images/logo.svg"/>
+                        <span>MY Plant Watch</span>
+                    </a>
+                    <p>Exploring Malaysia's plant biodiversity through citizen science.</p>
+                </div>
+                <div class="footer-links">
+                    <h2>Quick links</h2>
+                    <a href="explore.html">Explore</a>
+                    <a href="identify.html">Identify</a>
+                    <a href="contributor.html">Contributors</a>
+                    <a href="contribute.html">Contribute</a>
+                    <a href="acknowledgement.html">Acknowledgement</a>
+                </div>
+                <div class="footer-contact">
+                    <h2>Contact</h2>
+                    <p>Created by Jimmy Kimathi Musyimi</p>
+
+                    <a href="mailto:102775339@students.swinburne.edu.my">Email me</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 MY Plant Watch</p>
+            </div>
+        </footer>
+    </body>
+</html>

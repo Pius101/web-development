@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <script src="script.js"></script>
+</head>
+<body>
+<form action="confirm.html" method="POST" enctype="text/plain" name="rent_enquiry" onsubmit="return validateForm();">
+                    <div class="row">
+                        <div class="col30"><label for="subject" id="subjectLabel">RE: Enquiry on</label></div>
+                        <div class="col70"><input type="text" name="subject" id="subject"></div>
+                    </div>
+	
+	
+	<fieldset>
+                    <!-- Product -->
+                    <legend>Product Details: </legend>
+                    <div class="row">
+                        <div class="col30"><label for="product">Product <span class="asterisk">*</span></label></div>
+                        <div class="col70">
+                            <select name="product" id="product" onchange="change()">
+                            <optgroup label="Stationary">
+                                <script>productlist1()</script>
+                            </optgroup>
+                          
+
+                        </select>
+                        </div>
+                    </div>
+                    
+    </fieldset>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* Lab Exercise 5 - surveyhome.css */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    color: black;
+}
+
+header {
+    background-color: navy;
+    color: white;
+    padding: 4px 8px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+nav {
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+nav ul {
+    float: left;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    float: left;
+    width: 6em;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 0.2em 0.6em;
+    border: 1px solid white;
+}
+
+nav a:hover {
+    background-color: brown;
+}
+
+main {
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+main > article {
+    float: left;
+    width: 65%;
+    min-height: 270px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: lightgrey;
+    box-shadow: 3px 3px 3px 2px #797979;
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    text-shadow: #aaa 2px 2px 2px;
+}
+
+article h2 {
+    font-size: 1.1em;
+}
+
+article p {
+    line-height: 1.35;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    font-size: 15px;
+    font-style: italic;
+    color: green;
+    background-color: lightblue;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+aside p {
+    margin-top: 0;
+}
+
+footer {
+    clear: both;
+    padding: 5px;
+    background-color: navy;
+    color: white;
+    margin-top: 8px;
+}
+
+footer p {
+    margin: 0;
+}

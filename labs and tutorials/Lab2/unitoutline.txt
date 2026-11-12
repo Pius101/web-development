@@ -1,8 +1,8 @@
 Faculty of Science, Engineering and Technologies
-Higher Education 
+Higher Education
 Unit of Study Outline
 COS10005/60002
-Web Development 
+Web Development
 Semester 1 2015
 Unit of Study Outline
 Unit of study code	COS10002/60005
@@ -16,32 +16,36 @@ Aims
 This unit is designed to introduce the technology of the Internet and World Wide Web and to develop an understanding of the technologies associated with programming for the World Wide Web.
 Learning Objectives
 After successfully completing this unit, you should be able to:
-1.	Develop web pages using HTML, JavaScript and CSS.
-2.	Demonstrate an understanding of the key technologies of the World Wide Web.
-3.	Describe the protocols of the World Wide Web.
-4.	Design effective and user-friendly web pages using usability principles and style guides.
-5.	Demonstrate an understanding of the history of the Internet and World Wide Web.
+Develop web pages using HTML, JavaScript and CSS.
+Demonstrate an understanding of the key technologies of the World Wide Web.
+Describe the protocols of the World Wide Web.
+Design effective and user-friendly web pages using usability principles and style guides.
+Demonstrate an understanding of the history of the Internet and World Wide Web.
 Content
-?	Web concepts: definition, history and fundamental concepts
-?	Introduction to HTML, CSS and Web Development processes
-?	HTML5: logical document structure, syntax, images, links, maps, tables, frames, forms
-?	W3C standards, validation
-?	Design, Layout and Usability: principles of navigation, usability, page style guides, standards
-?	Protocols and server technology: HTTP, TCP/IP, MIME, URI, DNS
-?	JavaScript: syntax, object model, event handling, common tasks
-?	Interactivity: DOM, and some evolving technologies forms processing, common tasks
-?	Style sheets: fundamentals, CSS formatting, CSS positioning, standards
-?	Web design and usability: principles of navigation, usability, style guides, standards
-?	Introduction to XML:
-1.	Syntax
-2.	DTDs
-3.	XSL
-4.	XML Applications
+Web concepts: definition, history and fundamental concepts
+Introduction to HTML, CSS and Web Development processes
+HTML5: logical document structure, syntax, images, links, maps, tables, frames, forms
+W3C standards, validation
+Design, Layout and Usability: principles of navigation, usability, page style guides, standards
+Protocols and server technology: HTTP, TCP/IP, MIME, URI, DNS
+<il>JavaScript: syntax, object model, event handling, common tasks</il>
+<il>Interactivity: DOM, and some evolving technologies forms processing, common tasks</il>
+<il>Style sheets: fundamentals, CSS formatting, CSS positioning, standards</il>
+<il>Web design and usability: principles of navigation, usability, style guides, standards</il>
+<il>Introduction to XML:</il>
+<ol>
+<il>Syntax</il>
+<il>DTDs</il>
+<il>XSL</il>
+<il>XML Applications</il>
+</ol>
 Key Generic Skills for this Unit of Study
-You will be provided with feedback on your progress in attaining the following generic skills:
-?	analysis skills
-?	problem solving skills
-?	ability to work independently
+<p>You will be provided with feedback on your progress in attaining the following generic skills:</p>
+<ul>
+	<li>analysis skills</li>
+	<li>problem solving skills</li>
+	<li>ability to work independently</li>
+</ul>
 Learning and Teaching Structure
 2 hours lecture and 1 hour tutorial per week.
 In a Semester, you should normally expect to spend, on average, twelve and a half hours of total time (formal contact time plus independent study time) a week on a 12.5 credit point unit of study.
@@ -50,10 +54,10 @@ The Library has a large collection of resource materials, both texts and current
 ?	Glenn Johnson, Training Guide Programming in HTML5 with JavaScript and CSS3, Microsoft, 2013
 Note: Please refer to Blackboard for some useful materials for this unit under Web Links.
 Blackboard Site for this Unit of Study
-Important information concerning this unit of study is placed on the Swinburne course management system (Blackboard/iLearn), accessible via http://ilearn.swin.edu.au/ 
-It is your responsibility to access on a regular basis 
+Important information concerning this unit of study is placed on the Swinburne course management system (Blackboard/iLearn), accessible via http://ilearn.swin.edu.au/
+It is your responsibility to access on a regular basis
 ?	the Blackboard site for your unit of study,
 ?	the Announcements section on Blackboard, and
-?	any emails sent by the teaching staff to your student email address via Blackboard. 
-If you access your email through a provider other than Swinburne, it is your responsibility to ensure that your Swinburne email is redirected to your private email address. 
+?	any emails sent by the teaching staff to your student email address via Blackboard.
+If you access your email through a provider other than Swinburne, it is your responsibility to ensure that your Swinburne email is redirected to your private email address.
 Discussion Boards on Blackboard will be open for General discussion about this Unit, and for discussion about Assignments. Please participate in these discussion forums, and post queries through these forums, rather than individual emails to the Lecturer or Tutors.

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>COS10011 Creating Web Applications</title>
+
+    <link href="styles/style.css" rel="stylesheet" />
+    <script src="confirm.js"></script>
+</head>
+
+<body>
+    <header>
+        <img id="images" src="SwinLogo.png" alt="Swinburne Logo" />
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://www.swinburne.edu.my/contact">Contact Us |</a></li>
+            <li><a href="https://www.swinburne.edu.my/hr">Jobs at Swinburne |</a></li>
+            <li><a href="https://www.swinburne.edu.my/library/services-for-teachers-2/copyright-at-swinburne.php">Copyright
+                    and disclaimer |</a></li>
+            <li><a href="https://www.swinburne.edu.my/privacy/privacy-collection-notice">Privacy |</a></li>
+            <li><a href="https://www.swinburne.edu.my/accessibility-information">Accessibility |</a></li>
+            <li><a href="https://www.swinburne.edu.my/feedback">Feedback</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <form id="bookform">
+        <fieldset>
+            <legend>User Details</legend>
+
+            <p>Your Name: <span id="confirm_name"></span></p>
+            <p>Your Email: <span id="confirm_email"></span></p>
+            <p>Your birthday: <span id="confirm_birthday"></span></p>
+            <p>Your unit: <span id="confirm_unit"></span></p>
+            <p>Your tutor: <span id="confirm_drop"></span></p>
+            <p>Your issue: <span id="confirm_issue"></span></p>
+            <p>Your description: <span id="confirm_textinput"></span></p>
+            <p>Your date: <span id="confirm_date"></span></p>
+            <p>Your time: <span id="confirm_time"></span></p>
+
+
+            <input type="submit" value="Confirm Booking" />
+            <input type="button" value="Cancel" id="cancelButton" onclick="cancelBooking()">
+        </fieldset>
+    </form>
+
+    <footer>
+
+        <p>Posted by: Jimmy Kimathi Musyimi</p>
+        <p>Contact information: <a href="mailto:102775339@students.swinburne.edu.my">Jimmy Kimathi Musyimi</a></p>
+    </footer>
+</body>
+
+</html>
